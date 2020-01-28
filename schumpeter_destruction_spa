@@ -13,130 +13,148 @@ bg_img_url = "https://media-exp1.licdn.com/dms/image/C4D12AQEz9hKxZ_YTsA/article
 +++
 
 
-# Schumpeter’s Creative Destruction. 
-## The new Artificial ways of Natural Selection. 
+# La destrucción creativa de Schumpeter.
 
-### - No Data, No Future.
-
-*“Curly: Uh-oh, he's snuffocatin'!*
-*Larry: Don't worry, I know the Heineken maneuver!”*
-**-The Three Stooges.**
-
-Today’s public/private goods and services providers face a novel and difficult task, keeping up with data processing, its accumulation, protection, and its controlling regulation, together with the need of achieving what many have called the “new industrial revolution” standards.
-
-Schumpeter's creative destruction is not just a fancy name, it is the process by which long standing practices are dismantled, giving way to new ways of innovation.
-
-Many executives and public organization managers still incur in notorious mistakes in regards to what Data Science can do for their organizations, considering the most advanced technologies in the market to be an expenditure, instead of the most reasonable investment to be financing.
-
-The above mentioned quote has a clear intention (besides the giggles it may provide), to show that many organizations today are being dragged into obsoletion, victims of their lack of data processing capabilities, without even noticing this elemental deficiency. As Curly, the unsurmountable amount of data is not aiding this organizations, as it is just contributing to their definite suffocation.
-
-For those who do notice this severe problem, their are not always able to identify the methods which are appropriate for overcoming the new requirements imposed by our age of digital selection.
+## Las nuevas formas artificiales de selección natural.
 
 
-### - Data Science. Not an option anymore.
+### - Sin datos, sin futuro.
 
 
-For almost every action, transaction, sale, complaint, interaction between subjects, or individual behaviours, data is generated. 
+*" Curly: Uh-oh, ¡se está sofocando!*
+*Larry: ¡No te preocupes, conozco la maniobra Heineken!"*
 
-Data is to be regarded nowadays as what it really is, the enriching substance that provides the information needed for process and product optimization, development, marketing, and every other aspect of value generation in the modern economy.
-
-Available Data is in no way diminishing, as everyday insurmountable amounts of it are created. However, the availability of professionals with the required abilities for its processing and utilization is not proportionate to its demand. 
-
-Data grows in an unstoppable way, forcing not only for more and better Data Science professionals, but also forcing businesses and organizations to look for methods that allow them to process such rich material, hitherto unavailable for many of them. 
-
-The problem is clear, not every organization has access to the benefits provided by data science, which in turn leaves them significantly behind from those competitors that actually have the tools and individuals to reap its benefits. Organizations that fail to adopt data driven, and data informed strategies, suffer the advance of competitors capable of gaining the market share made available only to them.
-
-The disparity between organizations that have a clear and proficient data science program, and those that don’t, is manifest, as the latter will not have access to any of the tools provided by this technology (data visualization, data analysis, data processing, data mining, etc.). Kodak, Nokia, Blockbuster, Blackberry, are just some of the myriad of organizations that failed to adopt data driven and innovative market solutions.
+**-Los tres chiflados.**
 
 
-### - A.I. Terminator likes to help.
+Los proveedores de bienes y servicios públicos/privados de hoy enfrentan una tarea tan novedosa como difícil, mantenerse al día con el procesamiento de datos, su acumulación, protección y su regulación, sumado a la necesidad de lograr lo que muchos han llamado los estándares de la "nueva revolución industrial".
+
+La destrucción creativa de Schumpeter no es solo un nombre elegante, es el proceso mediante el cual se desmantelan las prácticas de pre-establecodas o de larga data, dando paso a nuevas formas de innovación.
+
+Muchos ejecutivos y gerentes de organizaciones públicas aún incurren en errores notorios con respecto a lo que Data Science puede hacer por sus organizaciones, considerando que las tecnologías más avanzadas en el mercado son un gasto, en lugar de la inversión más razonable.
+
+La cita mencionada anteriormente tiene una intención clara (además de las risas que puede proporcionar), pretendiendo mostrar que muchas organizaciones hoy están siendo arrastradas a la obsolescencia, víctimas de su falta de capacidades de procesamiento de datos, sin siquiera notar esta deficiencia elemental. 
+
+Como Curly, la cantidad insuperable de datos no está ayudando a estas organizaciones, ya que solo está contribuyendo a su asfixia definitiva.
+
+Aún quellos que notan este grave problema no siempre logran identificar los métodos apropiados para superar los nuevos requisitos impuestos por nuestra era de selección digital.
 
 
-*“Algorithms capable of making predictions do not eliminate the need for care when drawing connections between cause and effect; they are not a replacement for controlled experiments. But what they can do is extremely powerful: identifying patterns to subtle to be detected by human observation, and using those patterns to generate accurate insights and inform better decision making The challenge for us is to understand their risks and limitations  and, through effective management, unlock their remarkable potential.”*
-**Harvard Business Review.**
-
-Mere data collections would be utterly useless if there was nobody to analyze them, similar to libraries filled with texts written in an incomprehensible language (programmers are familiar with such ironies). 
-
-However, technology nowadays has surpassed our own expectations, as systems are being developed which allow to process and analyze data automatically, contributing to supply organizations with skilled digital brains that will help them access certain data sets.
-
-Most of the time, Data Scientists, in combination with Business Experts, are the ones administering data analysis and utilization, being their skills highly valued throughout the digital market as a whole. Despite this, new technologies objectives are not to substitute, but to aid this scientists, contributing and providing tools for the Data professionals to utilize and, simultaneously, improve and optimize their own work.
-
-It is at this point that A.I. systems make their appearance, as they are a vital tool for analysing data sets, aiding the job of analysts while also providing accurate information on determined tasks (v. gr. fraud detection, text processing via NLP, etc.).
-
-We should note that Machine Learning is a fundamental part of A.I. implementation, as a set of data-driven algorithms enable the creation of high accuracy prediction models, as well as many other functions required by the use of data. 
-
-Machine learning is essentially the process by which a given program learns how to make intelligent and highly accurate decisions, using large amounts of data. Traditional software uses human coded logic to make decisions. 
-
-The novel approach that Machine Learning allows for is that it does not require human experts,as it does not require the coding of the strict logical rules that are needed to conduct data driven decisions.
-
-Artificial Intelligence encompassing a wide range of methodologies. Nowadays, Machine Learning is a driving aspect of AI development and modern business growth.
-
-ML is not necessarily new, as many of the implemented ideas were originally developed  developed in the early 1900’s. 
-
-What changes today, besides technological advancements, is that, because we record and store so much information, the ML algorithms that have been developed are becoming ever more useful.
-
-During the 1950’s, there was no conceivable way of googling pictures of cute cats to generate a cat picture data set (poor souls).
-
-Machine Learning helps Businesses accelerate the time that it takes to extract valuable information from vasts amounts of unstructured, inconsistent, and high volumes of data. Classical statistics are also adding more value every day as the amount of data available to analysts grows exponentially. 
+### - Data Science. Ya no es una opción.
 
 
-### - Data Processing & Storing. GDPR, no tricks allowed
+Casi todas las acciones, transacciones, ventas, quejas, interacciones entre sujetos o comportamientos individuales, están generando datos.
+
+Los datos deben considerarse hoy en día como lo que realmente son, la sustancia enriquecedora que proporciona la información necesaria para la optimización de procesos y productos, el desarrollo, el marketing y todos los demás aspectos de la generación de valor en nuestra economía moderna.
+
+Los datos disponibles no disminuyen de ninguna manera, ya que se crean cantidades insuperables diarias de estos. Sin embargo, la disponibilidad de profesionales con las habilidades requeridas para su procesamiento y utilización no es proporcional a su demanda.
+
+Los datos crecen de una manera imparable, lo que obliga no solo a más y mejores profesionales en Data Science, sino también obliga a las empresas y organizaciones a buscar métodos que les permitan procesar material tan rico, hasta ahora no disponible para muchos.
+
+El problema es claro, no todas las organizaciones tienen acceso a los beneficios generados por la ciencia de datos, lo que a su vez los deja significativamente atrás de los competidores que realmente tienen las herramientas y personal para cosechar estos beneficios. Las organizaciones que no adopten estrategias y sistemas de decisiones basados en datos sufrirán el avance de competidores capaces de ganar la cuota de mercado disponible solo para ellos.
+
+La disparidad entre las organizaciones que tienen un programa de ciencia en datos claro y competente, y las que no, es evidente, ya que estas últimas no tendrán acceso a ninguna de las herramientas proporcionadas por esta tecnología (visualización de datos, análisis de datos, procesamiento de datos, minería de datos, etc.). Kodak, Nokia, Blockbuster, Blackberry, son solo algunas de las miles de organizaciones que no adoptaron soluciones de mercado innovadoras basadas en datos.
 
 
-For anyone who has not been living under a rock (provided no wifi is available), it is clear that Data Regulations today are starting to catch up to the technological benefits reaped until this day. Abusive and non-consensual data mining, processing, storing and distribution have generated increased outrage among certain countries and political classes, resulting this in more strict data controlling and storing methods.
+### - AI, a Terminator le gusta ayudar.
+ 
 
-The most clear example of new regulations is the General Data Protection Regulation (EU) 2016/679, or GDPR.
+*“Los algoritmos capaces de hacer predicciones no eliminan la necesidad de cuidado al establecer conexiones entre causa y efecto; no son un reemplazo para los experimentos controlados. Pero lo que pueden hacer es extremadamente poderoso: identificar patrones sutiles para ser detectados por la observación humana, y usar esos patrones para generar ideas precisas e informar una mejor toma de decisiones. El desafío para nosotros es comprender sus riesgos y limitaciones y, a través de una gestión eficaz, desbloquear su notable potencial ".*
 
-Compliance with the requirements and restrictions established in the referred instrument are to be achieved, in order to avoid the sanctions and restrictions also contemplated by this document
-
-In other words, Data Storing, Processing, Mining, Transfering & Analyzing must comply with the standards set by the GDPR, or else, penalties will be imposed on organizations, according to the State in which the infringement is carried out (Art. 84. Penalties).
-
-Any solution that allows businesses to mitigate the risks associated with data compliance contributes to their transparency, while also diminishing the operational costs derived from fines and penalties.
+**- Harvard Business Review.**        
 
 
-### - RPA. Robotic Process Automation.
+La simple recopilación de datos sería completamente inútil si no hubiese nadie para analizarlos, de manera similar a las bibliotecas llenas de textos escritos en un lenguaje incomprensible (los programadores están familiarizados con tales ironías).
+
+Sin embargo, la tecnología hoy en día ha superado nuestras propias expectativas, ya que se están desarrollando sistemas que permiten procesar y analizar datos automáticamente, contribuyendo a proporcionar a las organizaciones cerebros digitales calificados que los ayudarán a acceder a ciertos conjuntos de datos.
+
+La mayoría de las veces los científicos de datos, en combinación con expertos del campo, son los que administran el análisis y la utilización de datos, siendo sus habilidades altamente valoradas en el mercado digital. A pesar de esto, los objetivos de las nuevas tecnologías no son sustituir, sino ayudar a estos científicos, contribuyendo y proporcionando herramientas para que los profesionales en Datos utilicen y, simultáneamente, mejoren y optimicen su propio trabajo.
+
+Es en este punto que los sistemas de IA hacen su aparición, ya que son una herramienta vital para analizar conjuntos de datos, ayudar al trabajo de los analistas y al mismo tiempo proporcionar información precisa sobre determinadas tareas (v. gr. Detección de fraude, procesamiento de texto a través de NLP, etc...).
+
+Debemos tener en cuenta que el aprendizaje automático es una parte fundamental de la implementación de IA, ya que un conjunto de algoritmos basados en datos permite la creación de modelos de predicción de alta precisión, así como muchas otras funciones requeridas por el uso de datos.
+
+El aprendizaje automático es esencialmente el proceso por el cual un programa determinado aprende a tomar decisiones inteligentes y altamente precisas, utilizando grandes cantidades de datos. El software tradicional utiliza la lógica codificada por humanos para tomar decisiones.
+
+El enfoque novedoso que permite el aprendizaje automático es que no requiere expertos humanos, ya que no requiere la codificación de las estrictas reglas lógicas que se necesitan para tomar decisiones.
+
+El término *Inteligencia artificial* abarca una amplia gama de metodologías. Hoy en día, el aprendizaje automático es un aspecto impulsor del desarrollo de inteligencia artificial y el crecimiento empresarial moderno.
+
+ML (Machine Learning) no es necesariamente nuevo, ya que muchas de las ideas implementadas fueron originalmente desarrolladas a principios de 1900.
+
+Lo que cambia hoy, además de los avances tecnológicos, es que, debido a que registramos y almacenamos tanta información, los algoritmos de ML que se han desarrollado son cada vez más útiles.
+
+Durante la década de 1950, no había una forma concebible de buscar en Google imágenes de gatos lindos para generar un conjunto de datos de imágenes de gatos (pobres almas).
+
+Machine Learning ayuda a las empresas a acelerar el tiempo que lleva extraer información valiosa de grandes cantidades y volúmenes de datos no estructurados, inconsistentes y desestructurados. Las estadísticas clásicas también agregan mayor valor cada día a medida que la cantidad de datos disponibles para los analistas crece exponencialmente.
+
+
+### - Procesamiento y almacenamiento de datos. GDPR, no permite trucos.
+
+
+Para cualquiera que no haya estado viviendo debajo de una roca (siempre que no haya tenido wifi), está claro que las Regulaciones de Datos actuales están comenzando a ponerse al día con los beneficios tecnológicos cosechados. La minería, el procesamiento, el almacenamiento y la distribución abusiva y no consensuada de datos han generado una gran indignación entre ciertos países y clases políticas, lo que ha resultado en métodos más estrictos de control y almacenamiento.
+
+El ejemplo más claro de las nuevas regulaciones es el *Reglamento General de Protección de Datos (UE) 2016/679*, o GDPR por sus siglas en Inglés.
+
+Se debe cumplir con los requisitos y restricciones establecidos en el instrumento mencionado para evitar las sanciones y restricciones también contempladas en este documento.
+
+En otras palabras, el almacenamiento, procesamiento, minería, transferencia y análisis de datos debe cumplir con los estándares establecidos por el GDPR, de lo contrario, se impondrán sanciones a las organizaciones, según el Estado en el que se lleve a cabo la infracción (Art. 84. Sanciones).
+
+Cualquier solución que permita a las empresas mitigar los riesgos asociados con el cumplimiento de reglas en manejo de datos contribuye a su transparencia y seguridad, al tiempo que disminuye los costos operativos derivados de multas y sanciones.
+
+
+### - RPA . Automatización robótica de procesos.
+
 
 *"Domo Arigato Mr. Roboto."*
-**-Styx.**
+
+**- Styx.**
+
+ 
+La **AUTOMATIZACIÓN ROBÓTICA DE PROCESOS** no es solo una herramienta , sino también un paradigma que tiene el potencial de revolucionar el mercado laboral.
+
+Muchos confunden los términos AI y RPA cuando se trata de procesos automatizados dentro de una organización, error no sólo común, sino también significativo. RPA es el uso de robots virtuales para llevar a cabo ciertas actividades, imitando el trabajo humano con sistemas de computación, para automatizar los procesos comerciales y organizacionales.
+
+Debido a la gran cantidad de actividades humanas que se llevan a cabo dentro de una organización, los sistemas RPA permiten una amplia gama de casos de uso y prácticas de implementación. Los RPA pueden ser simples robots basados en reglas que realizan tareas simples (como la entrada de datos), o pueden ser una variedad totalmente orquestada de sub-robots y modelos de IA, automatizando prácticas comerciales más complejas y sofisticadas.
+
+RPA es una tecnología autosuficiente, ya que el mercado para esta solución en particular ha crecido de modo que lidera la transformación digital, ya que ha impactado todos los aspectos de las organizaciónes, desde la gestión de clientes hasta la infraestructura y los modelos comerciales en general.
+
+*"Las tres principales compañías de software RPA se acercan a valores superiores a los 10 mil millones."* 
+**- Craig Le Clair, Analista Principal. Forrester.**
+ 
+
+### - Verdadero valor.
 
 
-**ROBOTIC PROCESS AUTOMATION** (intended bold capital letters) is not just a tool, it is a paradigm which has the potential to revolutionize the current labor market.
+Es innegable el valor que RPA está creando para las industrias y empresas en su conjunto, sirviendo tanto a estados y empresas en la optimización y reducción de sus costos operativos.
 
-Many confuse the terms AI and RPA when it comes to automated processes within an organization, which is not only a common, but a pretty significant mistake. RPA is the use of virtual robots to conduct activities, mimicking human work with additional machine computation, in order to automate business processes.
+En el caso de las instituciones gubernamentales , los procesos de digitalización y automatización permiten alcanzar potenciales ganancias en productividad. 
 
-Due to the wide amount of human activities that are conducted within an organization, RPA systems allow for a wide range of use cases and implementation practices. RPA’s can be simple rule based robots that perform simple tasks (like data entry), or they can be a fully orchestrated variety of sub-robots and AI models, automating more complex and sophisticated business practices.
+Los gobiernos deberían apuntar a digitalizar sus servicios en gran volumen, por ejemplo los procesos intensivos en mano de obra, ya que al enfocarse en estas categorías de costo significativo se potencia y acorta el retorno de inversion.
 
-RPA is a self sufficient technology, as the market for this particular solution has grown in such manner that it actually leads the tip of digital transformation, having impacted every organizational aspect, from customer management, to infrastructure and business models as a whole.
+Las empresas que desarrollan tecnologías RPA son actualmente organizaciones aceleradas y altamente valoradas, ya que son las que impulsan la optimización general de los procesos en todo el mundo y tienen el potencial de acelerar la implementación de todas las otras tecnologías de las que hemos hablado.
 
-“The top three RPA software companies are approaching values in excess of 10 billion.” Craig Le Clair, Principal Analyst. Forrester.
+*“Las empresas más exitosas del mundo de hoy funcionan con software y emplean menos empleados que sus predecesores. Facebook emplea solo a 25,000 personas. Genera unos asombrosos $ 1.6 millones en ingresos para cada uno. Apple genera $ 1.85 millones por empleado, y Alphabet, matriz de Google, genera $ 1.2 millones ”.*
+**- Craig Le Clair, Analista Principal. Forrester.**
 
+ 
 
-### - True Value.
-
-
-One can not deny the value that RPA is creating for industries and companies as a whole, serving states and enterprises in optimizing and reducing operational costs.
-
-In the case of government institutions, digitizing and automating processes allows for the most potential productivity gains. Governments should aim to digitize high volume services, labor intensive and costly processes, as their are to obtain the highest gains by focusing on this much needed categories.
-
-The companies that develop RPA technologies are currently fast-paced, highly-valued organizations, as they are the ones that drive general process optimization around the world, having the potential to accelerate the implementation of all the other technologies we have talked about.
+### -Sobreviviente.
 
 
-*“The most successful companies in the world today run on software and employ fewer employees than their predecessors. Facebook employs only 25,000 people. It generates a staggering $1.6 million in revenue for each one. Apple generates $1.85 million per employee, and Google parent Alphabet generates $1.2 million.”* 
-**- Craig Le Clair, Vice President. Forrester.**
+*"Primero tenía miedo, estaba aterrorizada."*
 
-### -Surviving.
+**-Gloria Gaynor. "Survive".**
 
-*“First I was afraid, I was terrified”*
-**-Gloria Gaynor. “I will survive”.**
+ 
+Como expuso Charles Darwing en su trabajo *"Sobre el origen de las especies mediante la selección natural, o la preservación de las razas favorecidas en la lucha por la vida"*, la adaptación es clave para la supervivencia evolutiva. Aquellos seres que no son capaces de enfrentar un entorno cambiante eventualmente desaparecerán.
 
-As Charles Darwing exposed in his work “On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life”, adaptation is key for evolutionary survivability. Those beings which are not capable of facing a changing environment will eventually disappear.
+Teniendo en cuenta el acelerado ritmo de nuestros desarrollos tecnológicos, todos debeiamos estar informados sobre los beneficios que las tecnologías más avanzadas nos brindan. Quienes no adopten métodos y procesos novedosos serán obsoletos, víctimas de las nuevas olas de innovación.
 
-Taking into account the fast pace of our current technological developments, everyone should be informed of the benefits that the most advanced technologies provide for them. Those who do not adopt newer methods and processes will be obsolete, victims of the newer waves of innovation.
-
-As Schumpeter described, obsolete practices will be dismantled by the Creative Destruction process, as the capitalist system exhibits this relentless drive towards progress and innovation.
+Como describió Schumpeter, las prácticas obsoletas serán desmanteladas por el proceso de *Destrucción Creativa*, ya que el sistema capitalista exhibe este incesante impulso hacia el progreso y la innovación.
 
 
-### Bibliography.
+### Bibliografía.
 
 https://www.mckinsey.com/industries/public-sector/our-insights/when-governments-turn-to-ai-algorithms-trade-offs-and-trust “When governments turn to AI: Algorithms, trade-offs, and trust”, Anusha Dhasarathy, Sahil Jain, & Naufal Khan, McKinsey & Company, McKinsey Insights, February, 2019.
 
