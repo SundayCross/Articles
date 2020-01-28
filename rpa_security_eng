@@ -214,9 +214,8 @@ Here are some of them:
 
 - The inability of RPA algorithm to handle an exception. Therefore, a lack of proper pre-production or/ and periodical testing will at some point result in loss of data integrity. Additionally, a loss of data integrity could also occur if tasks that should be accomplished by humans are assigned to RPAs instead. 
 
-#### Reputable damage
 
-A lack of proper pre- production or/and periodical testing will at some point result in loss of data integrity.
+#### Reputable damage
 
 *SCENARIO:*
 
