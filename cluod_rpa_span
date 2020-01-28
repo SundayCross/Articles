@@ -1,0 +1,13 @@
++++
+title = "Cloud Native RPA's"
+description = "RPAs nativos en Nube usando Python e Infraestructuras Destruibles"
+date = 2019-05-19
+
+[taxonomies]
+marbetes = []
+"categorias" = [RPA]
+authors = [David Katz]
+
+[extra]
+bg_img_url = https://miro.medium.com/max/580/1*XEZLhCybfYw-WTptKqttMg.jpeg
+<!-- more -->
