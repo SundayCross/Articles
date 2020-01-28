@@ -1,0 +1,292 @@
++++
+title = "Data Driven"
+description = "The impact of Intelligence"
+date = 2020-01-20
+
+[taxonomies]
+marbetes = []
+"categories" = [Data Science]
+authors = [David Katz, Tomas Sande]
+
+[extra]
+bg_img_url = https://media-exp1.licdn.com/dms/image/C4D12AQGmKXYkl_4bQw/article-cover_image-shrink_720_1280/0?e=1585785600&amp;v=beta&amp;t=ExfQhGIAJVMxfJsuV_VYFJYyd_EQXyN93cEPC7p9WEw
+<!-- more -->
+
+# Data Driven
+
+## The impact of Intelligence
+
+
+*“All the books in the world contain less information than the one broadcasted on video in a large American city in just one year. Not all bits are worth the same.”*
+
+**- Carl Sagan**
+
+
+### The Age of Data
+
+#### Redefining Value
+
+
+No one is oblivious to the fact that, currently, the amount of available data grows exponentially, so the problem is not what data to obtain, but how to manage it efficiently.
+
+For many, a Data Lake can represent something unimaginable, such as a construction from the Matrix or other science fiction inventions.
+ 
+Fortunately, Data Lakes are not only real, but also the result of a progressive improvement over the way we store, manage and use our information.
+
+Now, what do we want them for? What is the use of managing them better?
+
+As *Banko and Brill* demonstrated in 2001, spending time generating better algorithms is not as essential as making sure you have a sufficient and interpretable amount of data that improves your machine learning models.
+
+(Original image called “Figure 1”)
+
+As the authors suggested at the time, the value of increasing the volume of usable data exceeds the value generated in seeking to optimize or improve specific systems.
+
+Historically, the amount of data that organizations owned and stored allowed them to place it in the so-called "Data Warehouses" (which we will see later), an issue that is currently almost impracticable for a data driven business model.
+
+Our era has a very important particularity, as we reach and overcome the so-called “zetabyte” of data, which represents nothing more and nothing less than 1,000,000,000,000,000,000,000 bytes.
+
+Even more amazing is the fact that this "zetabyte" is somewhat small compared to the actual volume, as the amount of data waiting to be stored globally by 2025 reaches the incredible sum of 175 zetabytes.
+
+According to *Gartner*, by 2021, 80% of emerging technologies are expected to have *Artificial Intelligence* components , so it is not surprising that the paradigm imposed by FANG (Facebook, Amazon, Netflix, Google) promotes not only more scalable solutions, but also better technological levels and greater access for developers and users.
+
+It would not be logical to pretend that all companies can reach the technological level of Facebook, Twitter or other similar ones, but it is clear that ignoring the technologies and benefits associated with Data Science and Big Data implies not only a disadvantage, but also a formula aimed at failure.
+
+Most of the time, the difficulties lie in cultural changes that must be faced to achieve true levels of innovation, also accompanied by sufficient development capabilities that are often not present in organizations.
+
+When asked about this issue, some professionals gave us their point of view on the most relevant issues they face when facing innovative processes.
+
+*"The biggest challenge lies in creating a culture that can adapt to the new action plans aimed at digital transformation, remarking that culture starts from people."*
+**- Gonzalo Pablo Simmons, CSO and Co-Founder of uSound**, in direct communication with Cross Entropy.             
+
+*"Despite the current advances, the difficulty we find today is to have the skills, generally scarce, of being able to orchestrate a large number of tools, opportunities and ideas related to technologies that are advancing at a speed that, until today, we had not witnessed."*
+**- Felipe Hernandez Lagos, CTO at Predictable Media**, in direct communication with Cross Entropy.             
+
+*“In LATAM, Digital Transformation is perceived at different levels according to the industry and the location where the companies are located. Therefore, although digital literacy is not bad, there are technical impediments due to a lack of infrastructure in many regions, with Culture being the most essential requirement towards the path of Digital Transformation. ”*
+**- Ariel Cabrejos , CEO & Co-Founder of GOIAR**, in direct communication with Cross Entropy.             
+
+Following this line, we can see that there are different reasons why organizations are reluctant to invest and incorporate new technologies, being able to highlight 3 as an example:
+
+- Existence of recent or large volume investments in closed, proprietary and/or backward technologies.
+
+- Complex organizational structures and cultures that complicate digitalization processes.
+
+- Lack of a plan or panorama on how to incorporate, manage and carry out innovative policies.
+
+To understand how some organizations choose to overcome these obstacles, we consulted the *CTO* of Australian company *Melbourne Water*, **Geoff Purcell**, on how they address these challenges.
+
+*“I increasingly believe that successful digital transformations are less based on technology, as technology will come and go over the next 5-10 years. I do believe that successful digital transformations are based upon three things:
+
+ 1 Ruthless management of data,
+
+ 2 A superior integration platform
+
+ 3 Digital capability uplift of our workforce.”*
+ 
+Fortunately for our globalized world, the open source movement has gained significant relevance in the field of technology, allowing the developments and advances of the best organizations to offer their components to developers for free.
+
+Thanks to this movement, Google gave us Hadoop, UC Berkeley developed Spark (currently managed and maintained by Apache) while also generating in other companies the need and desire to contribute to the community of developers and innovators, taking its main seat in the world's number one open source operating system, the Linux system and its various distributions.
+
+It should be clear that data is a differential in all organizations, and although many pretend not to notice it, absolutely all of them will be affected by the benefits obtained by their direct competition.
+
+This is because the decisions based on data and the systems that use it have become a necessity for any organization, since all markets have been and will continue to be impacted by these new technologies.
+
+In the case of *Netflix*, the recommendation systems based on artificial intelligence represent a *saving for the company 1 billion dollars per year*, added to the fact that 75% of its users select and view content based on those recommendations.
+
+This level of effectiveness and return demonstrates how predictable human behavior and user preferences can be, showing the benefits of establishing our decisions not only by intuition, but by seriously ponderating the alternative decisions based on information .
+
+*“The great thing about this is that every decision is a sign of a certain accumulation of daily situations, be they emotional, logistic, social, political, etc."*
+
+**- Nicolás Izcovich , Head of Data Science at Rebanking**, in direct communication with Cross Entropy.
+
+Innovation, evolution and development are a challenge and necessity for organizations of any field, not only to generate specific advantages, but also to avoid disappearing due to lack of innovative capital (as in the case of Blockbusters, Polaroid, Compaq, Kodak, among others).
+
+
+### Data lakes?
+
+#### Learning to swim
+
+
+In short, Data Lakes can be seen as the accumulated water that feeds a hydroelectric dam, since, used correctly, they are the power behind all decisions based on data that may exist throughout organizations.
+
+As we mentioned before, organizations used to rely on systems called Data Warehouses to store, access and use their data.
+
+The peculiarity of these structures is that, although they were very useful at the time, the difficulty and time taken in their implementation, the number of developers needed to maintain and access them, added to their high cost, made few organizations able to access this type of systems.
+
+In accordance with this background, providers with licensed systems such as Microsoft (Microsoft SQL Server) and Oracle (Oracle SQL Server) dominated the commercial intelligence market.
+
+Fortunately, the exponential increase in data generation, the need for its use and the open source movement make it impossible for these suppliers to maintain a dominant position in the market, giving rise to both small and medium developers, as well as new suppliers such as Amazon or Google .
+
+Improvements in scalability, connection and gratuitousness of systems means that the licensed solutions are not economically or technologically attractive, allowing independent developers and small organizations to access a new market with an exponentially growing demand.
+
+Data Lakes do not require licenses or proprietary systems, but only a group of developers with sufficient technical knowledge to take advantage of the large number of open source tools available.
+
+Quickly, we can see that some of the advantages and benefits of Data Lakes include:
+
+- Centralized storage and processing of data, in addition to allowing segregated or separate computing (individual server, servers, cloud).    
+
+- Highly Modular Architectures.     
+
+- The data collected can be stored in Raw or Transformed format in a single integrated system.     
+
+- They allow Self-Service access to the data present throughout the organization, using Distributed Control Accesses to define which users can be used for the different kinds of data.     
+
+- They promote an open culture for the analysis, use and optimization of data and technological innovation within organizations.     
+
+Beyond the points we pointed out, the important thing is to understand the ductility of these projects, since they can operate both o- cloud and on-premise.
+
+This implies that it is possible to avoid storing and computing tdata physically on proprietary servers, being able to transfer them to cloud services from external providers such as AWS, Google Cloud or Microsoft Azure.
+
+The division between computing and storage allows data engineers to generate management, analysis and discovery systems that currently far exceed any past application.
+
+Thinking about lakes in clouds is quite bizarre, but it is essential to understand that this type of technologies allow us to manage storage capacities and computational power in a distributed way, facilitating and enhancing the tasks of entry, processing, storage, access and use of data.
+
+
+### Puddle, Pond, Lake
+
+#### Making our pool better than the neighbor's
+
+
+Creating Data Lakes is not something that happens overnight; as a house, it needs adequate planning and resource management (except for motorhomes that only need gasoline).
+
+So how do we make our Data Lakes? What steps can we follow?
+
+Like everything else, it is always better to promote organic and proportional growth to scale data solutions.
+
+Seen in a general way, we can see that there are 3 stages of scalability:
+
+**Data Puddle**: The “puddles” of data are usually developed for particular projects or purposes, of singular use, normally oriented to big data solutions.
+These projects with a single objective or limited in scope are usually the first step for organizations to integrate big data technologies, both functionally and culturally.
+Since the data is known and understood, containing it in a Data Warehouse is sufficient for analytical processing and transformation.
+Projects are usually limited to dashboards, reports, visualizations or specific Machine Learning projects.
+
+**Data Pond**: Basically, this pond consists of a collection of “data puddles” placed efficiently. This scale allows the abandonment of traditional BI tools towards big data solutions with higher levels of flexibility, usually aimed at developers or technical users.
+
+**Data Lake**: This scale is the level of data self-reliance that organizations should aim to achieve as a minimum basis. The Data Lakes allow not only the self-service of data throughout the organization, but also contain a quantity of data that exceeds the focus of specific projects and democratizes their use.
+Unlike a “Pond”, this system has a degree of sufficient automation and governance to ensure cultural change at the organizational level, ensuring that the different sectors of the organization can access its tools and services.
+This tool allows reaching the technical and non-technical users of the organization, effectively democratizing the use and access to stored data.
+
+**Data Swamp**: Contrary to previous systems, a Data Swamp is something we don't want to have. This "swamp" is generated when the stored data is not used or there is insufficient access. This happens when documentation is poor or governance policies make the model unusable for some vital users.
+ 
+
+### Key points
+
+
+There are three specific aspects that we need to consider for a successful "Lake":
+
+- The correct data.     
+
+- The right platform.     
+
+- The right interfaces.     
+
+To achieve these goals, a rigorous analysis of the present and future needs of the organization is required, in order to determine the open source technologies that are most compatible with its ecosystem.
+
+However, we need not only to have the right tools, but to establish an adequate data governance model, which requires understanding which users interact and will interact with our lake.
+
+As a Lifeguard in a pool, we have to know who is going to enter it and to what extent they can do it.
+
+No matter the size of the organizations or their distribution, all data lakes need to be accompanied by an appropriate governance model that ensures proper operation.
+
+
+### Data Governance
+
+#### The art of Governing
+
+To know how to manage access and use of data, we must first delineate our governance policies:
+
+- *Document the ownership of the data*. We have to understand and delineate existing data in addition to who are its administrators and potential users.
+- *Evaluate, Document and Establish Access policies*. Legal regulations and other limitations oblige organizations to correctly manage their data, in addition to being necessary to generate consistency between which users may access certain data that may be sensitive or confidential.
+- *Management of Metadata and Documentation*. All our datasets, sources, process descriptions have to be documented, maintained and updated correctly.
+- *Data retention and backup*. Depending on the need, clear policies on back-up and data retention modalities must be defined, seeking to minimize costs and optimize the value obtained.
+- *Business Glossary*. To eliminate the ambiguity of existing terms, the Glossary contains the names and official descriptions of the terminologies that will be used (for example, KPIs should be clearly defined for all users). We must seek to ensure that the terms can be used taxatively for specific sources, processes or destinations.
+
+Governance allows us to prevent our lakes from becoming swamps, implying that our data will be accessible from any corner of the organization, preventing them from stagnating or remaining useless.
+
+
+### Progression
+
+#### Walk, don't Run
+
+
+Without going into too much detail, it is clear that a data lake initiative requires increasing the size and quantity of puddles in conjunction with governance and documentation models to avoid data swamps.
+
+To avoid this, we usually seek to achieve an agile and iterative development, having to define the storage of the data and the first visualizations that will be made for the executive segment, that is, our first deliverables.
+
+All this requires certain successive sprints with different objectives, of varying complexity, to ensure an integral development of sufficient speed, some common issues to the developments are usually:
+
+- The possibility of downloading data directly from applications to data ponds, requiring the implementation of an ETL (extract, transformer and load).
+
+- Start with the assembly of Data Science or Advanced Analytics projects using individual ponds to demonstrate the value, scalability and return on investment of the system ( ROI ).
+
+- Definition and Implementation of Governance policies.
+
+- Harmonization of the data present in the different ponds, classification and grouping.
+
+As our Data Pond grows towards a Lake, we have to seek to promote new Data Science projects in which the crossing of data, coming from different sectors of the organization, allows us to maximize it's use and generate creative ideas from these and their conclusions.
+ 
+
+### Architecture
+
+#### Divisions and spaces
+
+
+Data lakes can have different segments within their structure, which is generally distributed in different regions or areas.
+
+From a technical point of view, these zones can be directories in a file system distributed in the cloud or on-premise, as well as integrate the different computational components that process and analyze the data.
+
+By using structured directories and subdirectories, one can polish access policies to maximize security and usage policies.
+
+**Landing / Raw Zone**: The area that stores raw data, reserved for data engineers and data scientists.
+
+**Gold Zone / Prod Zone**: In this zone, the data is harmonized and standardized, introducing data cleaning processes and storing processed data. This area is the one that is most documented and managed rigorously.
+
+**Work Zone**: Advanced analytics projects will be carried out in this area. In this area different developers can freely host semi-processed data and move forward with different analytics projects that will eventually be found in the gold zone or insight zone.
+
+**Insights Zone**: The BI tools and data visualization connect to the production bases and other systems, allowing end users (without technical experience) to explore the existing data in the lake.
+
+Finally, a data cataloging process should be carried out, for which tools such as Apache Atlas, IBM Watson Catalog, and Google Cloud Data Catalog can be useful.
+
+ 
+### Conclusions
+
+
+In short, we can see what are the points of value and conflict that exist when generating data lakes within organizations, in addition to the technological impact they generate and the consequences of their implementation.
+
+The difference with most of the commercial segment is that the processes and systems mentioned come from the data science segment, so the scientific method operates as the main inspiration to define the steps, methods and documentation necessary to organize the development.
+
+This often makes the processes seem oblivious to the nature of the commercial or organizational processes because they seem, often, counter-intuitive or not necessarily bound by common sense.
+
+The task today is to democratize the access to these tools and their understanding, so using systems compatible with tools such as Hadoop (open source), requires only having sufficient skills to take advantage of them, or having access to the staff that has them.
+
+The lack of trained personnel imposes a serious challenge on organizations, an issue that is slowly being modified thanks to the existence of external suppliers that allow the generation of products and developments that facilitate the access and use of data.
+
+Outsourcing the development of these systems is essential to ensure further expansion of technological change coming, allowing open source initiatives from small and medium developers to gain access to a market historically dominated by large suppliers.
+
+The cheapening and acceleration of these projects shows that organizations reluctant to adopt Data Science tools do not do so because of economic obstacles, but rather cultural ones.
+
+What is clear is that the market demands better decisions, either because of the fact that there is a higher level of demand on the part of consumers or due to the need to minimize harmful decision-making at the organizational level.
+
+It will depend on each organization to accept the imminent progress or to try to avoid these new technologies to the point that, unfortunately, it will be impossible for them to compete as they become, unavoidably, obsolete.
+
+*“I did then what I knew how to do. Now that I know better, I do better.”*
+
+**- Maya Angelou**
+
+
+### Bibliography:
+
+https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/a-smarter-way-to-jump-into-data-lakes, Mikael Hagstroem, Matthias Roggendorf, Tamim Saleh, and Jason Sharma, A smarter way to jump into data lakes, August 2017.
+
+https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/, Amazon, What is a data lake?
+
+https://www.searchtechnologies.com/blog/search-data-lake-with-big-data, Carlos Maroto, A Data Lake Architecture with Hadoop and Open Source Search Engines.
+
+https://severalnines.com/database-blog/introduction-data-lakes, Bart Oles, An Introduction to Data Lakes, July 11, 2019.
+
+https://cmo.adobe.com/articles/2018/9/15-mindblowing-stats-about-artificial-intelligence-dmexco.html#gs.m7lzpy, Giselle Abramovich, 15 Mind-Blowing Stats About Artificial Intelligence, Adobe.
+
+http://technocalifornia.blogspot.com/2012/07/more-data-or-better-models.html?m=1
+
+CARLOS A. GOMEZ-URIBE & NEIL HUNT, “The Netflix Recommender System: Algorithms, Business Value, and Innovation”, ACM Transactions on Management Information Systems Volume 6 Issue 4, January 2016. https://dl.acm.org/citation.cfm?id=2843948.
+
+MICHELE BANKO & ERIC BRILL, “Scaling to Very Very Large Corpora for Natural Language Disambiguation”, Microsoft Research, Proceedings of ACL 2001, January, https://www.microsoft.com/en-us/research/publication/scaling-to-very-very-large-corpora-for-natural-language-disambiguation/
