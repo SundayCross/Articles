@@ -1,4 +1,19 @@
-Building Cloud Native RPA’s in Python using Destructible Infrastructure
++++
+title = "Building Cloud Native RPA's"
+description = "Cloud Native RPA’s in Python using Destructible Infrastructure"
+date = 2019-05-19
+
+[taxonomies]
+marbetes = []
+"categories" = [RPA]
+authors = [David Katz]
+
+[extra]
+bg_img_url = https://media-exp1.licdn.com/dms/image/C4D12AQGmKXYkl_4bQw/article-cover_image-shrink_720_1280/0?e=1585785600&amp;v=beta&amp;t=ExfQhGIAJVMxfJsuV_VYFJYyd_EQXyN93cEPC7p9WEw
+<!-- more -->
+
+
+
 In this article we will be:
 Setting up a virtual desktop to develop and run our RPA. Our RPA will run in a linux virtual desktop running inside a docker container. This allows us to decouple our code from our infrastructure as much as we can and ensure a “cloud-native” RPA.
 Build an RPA that downloads financial data from the SEC official website. Since the SEC database is called EDGAR we will call this RPA the “EDGAR_investigator”.
