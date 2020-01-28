@@ -6,8 +6,375 @@ date = 2019-05-19
 [taxonomies]
 marbetes = []
 "categorias" = [RPA]
-authors = [David Katz]
+autores = [David Katz]
 
 [extra]
 bg_img_url = https://miro.medium.com/max/580/1*XEZLhCybfYw-WTptKqttMg.jpeg
 <!-- more -->
+
+# Cloud Native RPA's
+
+## RPAs nativos en Nube usando Python e Infraestructuras Destruibles
+
+En este artículo veremos:
+
+- Cómo configurar un escritorio virtual para desarrollar y ejecutar nuestro RPA. Nuestro RPA se ejecutará en un escritorio virtual de Linux que se ejecuta dentro de un contenedor acoplable. Esto nos permite desacoplar nuestro código de nuestra infraestructura tanto como podamos sea posible y garantizar un RPA "nativo de la nube".       
+
+- Crear un RPA que descargue datos financieros del sitio web oficial de la SEC. Como la base de datos de la SEC se llama EDGAR, lo llamaremos RPA "EDGAR_investigator".       
+
+- Asegúrarnos de que nuestro RPA esté desacoplado de sus datos persistentes y que potencialmente pueda ejecutarse en cualquier infraestructura.      
+
+#### Requisitos:
+
+- Conocimientos básicos de Python, RPA y procesos de negocio.       
+
+- Docker Desktop o Docker and Compose instalados en un servidor (para ejecutar y desarrollar nuestro RPA nativo en la nube)       
+
+Para obtener una descripción general de lo que es un RPA y algunas mejores prácticas para sud esarrollo, consulte el anterior artículo .
+
+Todo el contenido de este tutorial se puede encontrar en el siguiente repositorio:
+
+https://github.com/dkatz23238/pybotlib-tutorial
+
+
+### Introduciendo Pybotlib
+
+Pybotlib proporciona un contenedor de alto nivel sobre varias bibliotecas de Python e impone algunas de las mejores prácticas para desarrollar RPA en Python. Repasemos algunos conceptos básicos por los que cada pybotlib RPA tendrá que pasar. 
+
+Una vez que hayamos terminado, comenzaremos a construir nuestra RPA nativa en la nube usando código python e imágenes precompiladas.
+
+En lugar de desacoplar tareas que se ejecutan secuencialmente, en pybotlib crea un solo objeto "Agente virtual" que mantiene el estado general y el comportamiento que se necesita para ejecutar un proceso de negocio. Es una representación de su RPA y su funcionalidad. 
+
+Para crear un objeto VirtualAgent debe especificar los siguientes parámetros:
+
+- *bot_name:* un identificador único para el RPA       
+
+- *directorio_descarga:* dónde almacenar los archivos descargados a través de Internet       
+
+- *firefoxProfile:* el directorio en la máquina host donde firefox puede encontrar el archivo profiles.ini e instanciar un perfil mientras carga el controlador web firefox. Generalmente ubicado en /home/$USER/.mozilla/firefox       
+
+Todas las acciones se realizan a través de la instancia de objeto único pybotlib.VirtualAgent. En el siguiente ejemplo, el objeto se llama mybot. Una vez que creamos nuestro objeto VirtualAgent, procederemos a crear un archivo de registro para que registre mensajes y finalmente abra un navegador web. 
+
+Para comenzar a navegar por la web con el RPA, debe llamar al script get_geckodriver que descarga la última versión de firefox-geckodriver y la coloca en el directorio de trabajo actual. No se necesita dependencia para crear el archivo de registro RPA.
+
+Se puede acceder a todos los detalles sobre pybotlib a través de la documentación en el siguiente enlace:
+
+pybotlib.readthedocs.io
+
+El siguiente código presenta el texto con el que la mayoría de los scripts RPA deberían comenzar en Pybotlib. 
+
+Tenemos que importar los paquetes necesarios, descarga el controlador geckodriver más reciente, crea una instancia del VirtualAgent, inicializa un controlador web y finalmente accede a algún sitio web (en este caso google.com).
+
+```
+import os
+from pybotlib import VirtualAgent
+from pybotlib.utils import get_geckodriver
+# Downloads the geckodriver
+get_geckodriver()
+# Any file downloaded will be saved to the current working dir
+# under a folder called bot_downloads
+bot_download_dir = os.path.join(os.getcwd(),"bot_downloads")
+```
+
+```
+mybot=VirtualAgent(
+   bot_name="my_first_robot",
+   downloads_directory=bot_download_dir,
+   # In order to load specific profiles from host machine
+   firefoxProfile="/home/$USER/.mozilla/firefox" )
+# Start a web browser that can be accessed via mybot.driver or other mybot methods
+mybot.create_log_file()
+mybot.initialize_driver()
+mybot.get("http://www.google.com")
+mybot.log("I am accessing google")
+```
+
+Una vez que hayamos instanciado nuestro RPA, continuaremos programando y coordinando el conjunto de actividades que necesita llevar a cabo. Al final de nuestro script haremos un poco de limpieza:
+
+```
+mybot.driver.quit()
+mybot.log_bot_completion()
+```
+
+En cualquier momento durante nuestras secuencias de comandos RPA, se puede acceder al controlador web de selenium que controla Firefox a través de pybotlib.driver o se puede llamar a otros métodos en la parte superior del controlador web.
+
+Un método conveniente facilita la navegación por las páginas web, siendo siendo este `VirtualAgent.find_by_tag_and_attr ()`.
+
+Este método devolverá todos los elementos HTML con una etiqueta y un atributo específicos que correspondan a alguna cadena de evaluación que usted decida. El objeto VirtualAgent ya debe haber sido instanciado y un controlador web inicializado.
+
+Si quisiéramos buscar todos los botones en una página web con className = "hugebutton", usaríamos el siguiente código:
+
+
+``
+mybutton = mybot.find_by_tag_and_attr(“button”, “className”, “hugebutton”, 1)
+```
+
+
+También puede interactuar directamente con el controlador web y usar cualquiera de los métodos de Selenium que se proporcionan.
+
+#### Ejemplo
+
+```
+mybot.driver.refresh()
+```
+
+### Configurando nuestro entorno
+
+Ahora que conocemos los conceptos básicos, comencemos a crear nuestro código RPA. Es una buena práctica tener todo nuestro RPA ejecutado por un único punto de entrada, como un programa de Python llamado run_RPA.py o similar. 
+
+Organizaremos nuestro código para lograr esto.
+
+También es una buena práctica desacoplar sus datos de entrada / salida y hacer que su ejecución de RPA sea lo más sin estado posible. Cualquier RPA que desarrollemos debería poder girar, "verificar" si hay trabajo pendiente por hacer, y ejecutar este trabajo con la mínima interacción humana.
+
+El uso de un almacén de archivos en la nube es el mejor enfoque para desacoplar datos de entrada y salida. En este ejemplo, utilizaremos una pestaña de hoja de cálculo de *Hojas de cálculo de Google* como entrada de nuestro proceso comercial y activaremos un contenedor de almacenamiento de objetos minio que escucha el puerto 9000 para almacenar nuestros archivos de datos de salida. 
+
+Nuestro archivo de entrada será una hoja de cálculo que contiene lo que las compañías necesitan buscar y nuestra salida será simplemente una carpeta que contiene los informes SEC de dichas compañías. Nuestro RPA debería poder girar, verificar si hay filas pendientes para procesar, procesarlas y luego persistir en la salida. Vamos a crear la infraestructura mutable en la que se ejecutará nuestro RPA. 
+
+Un simple archivo acoplable que contenga dos imágenes será suficiente, un contenedor ejecutará el entorno completo de Ubuntu Desktop y el otro ejecutará nuestro almacén de archivos (en el caso de que usemos minio). Podemos usar cualquier tipo de almacenamiento de objetos para nuestra salida, siempre que diseñamos que RPA sea "destructible" en el sentido de que cualquier dato que necesite persistir se almacene en algún lugar fuera del entorno de escritorio. Puede ser que para su organización tener un escritorio virtual central que contenga todos los datos persistentes sea más práctico, pero cuanto más grande sea la escala de las operaciones RPA, más conveniente será tener una infraestructura inmutable. 
+
+También podríamos haber usado Minio como nuestra fuente de entrada de datos, pero usar una hoja de Google sería más fácil de usar que editar manualmente una hoja de cálculo y subirla.
+
+Ahora volvamos a codear...
+
+Primero creemos un `docker-compose.yml`.
+
+El contenido del archivo debe ser el siguiente:
+
+```
+version: "3"
+services:
+ virtual-desktop:
+   image: dorowu/ubuntu-desktop-lxde-vnc:bionic-lxqt
+   ports:
+     - "5910:5900"
+   environment:
+     - USER=robot
+     - PASSWORD=robot
+     - MINIO_ACCESS_KEY=V42FCGRVMK24JJ8DHUYG
+     - MINIO_SECRET_KEY=bKhWxVF3kQoLY9kFmt91l+tDrEoZjqnWXzY9Eza
+ minio:
+   hostname: minio
+   image: minio/minio
+   container_name: minio
+   ports:
+     - "9000:9000"
+   environment:
+     - MINIO_ACCESS_KEY=123456
+     - MINIO_SECRET_KEY=password
+   command: server /data
+```
+
+Ahora todo lo que tenemos que hacer es comenzar a correr nuestros contenedores y comenzar a desarrollar nuestro RPA.
+
+```
+docker-compose up -d
+```
+
+Ahora podemos conectarnos a nuestro escritorio virtual usando cualquier cliente VNC. Puede usar RealVNC en Windows o Mac. Ubuntu tiene un cliente de escritorio remoto incorporado. Se debe poder acceder al escritorio a través de http://127.0.0.1:5910 . 
+
+Si desea acceder al Escritorio a través de un navegador, puede asignar el puerto http noVNC y acceder a él a través de un navegador. Tenga en cuenta que la seguridad está desactivada de forma predeterminada. El usuario creado en el escritorio virtual se llama robot y su contraseña es robot. Esto se puede cambiar en el archivo docker-compose.yml.
+
+Se necesita una configuración inicial para instalar Python 3.7 y configurarla como la versión predeterminada. Se recomienda una comprobación rápida para asegurarse de que Firefox se ejecutará correctamente. Correr con recursos muy limitados puede causar problemas.
+
+Una vez que los contenedores estén conectados, conéctese al contenedor de Ubuntu a través de Escritorio remoto y abra una terminal (Shift + Ctrl + t). Ejecute los siguientes comandos para la configuración inicial:
+
+```
+sudo apt-get update && sudo apt-get install python3.7 nano python3-pip curl wget git && alias python=python3.7 && echo ‘alias python=python3.7’ >> /home/robot/.bashrc
+# Remember that the password for robot is robot
+python -m pip install pybotlib ipython
+```
+
+En estos comandos, instalamos python 3.7, lo configuramos como el comando predeterminado al usar la palabra python e instalamos pybotlib desde el índice del paquete python. También instalamos el intérprete Ipython para propósitos de depuración. Podemos abrir el intérprete interactivo y verificar si nuestra instalación fue correcta.
+
+Primero inicie IPython ejecutando el siguiente comando:
+
+```
+python — m IPython
+```
+
+Luego escriba el siguiente comando y asegúrese de que se ejecute correctamente.
+
+```
+import pybotlib
+```
+
+### Desarrollo del RPA
+
+Vamos a configurar una estructura de directorios en el escritorio virtual y llamarlo edgar-RPA. Crearemos un archivo llamado run_RPA.py.
+
+Todo esto se puede hacer desde la línea de comandos. Abra otra terminal dentro del escritorio virtual y ejecute:
+
+```
+mkdir /home/robot/Desktop/edgar-RPA
+touch /home/robot/Desktop/edgar-RPA/run_RPA.py
+```
+
+Vamos a escribir nuestro RPA dentro del archivo run_RPA.py. Puede editar el documento en su máquina host y copiar y pegar su código a través del cliente remoto en el editor de texto predeterminado que se ejecuta en el escritorio virtual o puede editar directamente dentro del escritorio virtual. 
+
+Si elige la última opción, se recomienda descargar atom en el escritorio virtual para usarlo como editor de texto, ya que el programa predeterminado es bastante horrible para escribir código. Si desea retroceder, simplemente puede escribir código dentro del terminal desde el escritorio virtual usando nano o vim.
+
+Si desea utilizar nano, asegúrese de instalarlo desde el terminal del escritorio virtual.
+
+```
+sudo apt-get install nano
+```
+
+Mi preferencia es simplemente usar el código de estudio visual o el átomo en una máquina host y copiar y pegar el texto desde el editor.
+
+Completemos run_RPA.py con nuestro código inicial repetitivo pybotlib de las secciones anteriores. Agregaremos algunas líneas al final para salir del navegador web.
+
+```
+import os
+from pybotlib import VirtualAgent
+from pybotlib.utils import get_geckodriver
+from time import sleep
+# Downloads the geckodriver
+get_geckodriver()
+# Any file downloaded will be saved to the current working dir
+# under a folder called bot_downloads
+bot_download_dir = os.path.join(os.getcwd(),"bot_downloads")
+mybot=VirtualAgent(
+ bot_name="my_first_robot",
+ downloads_directory=bot_download_dir,
+ # In order to load specific profiles from host machine
+ firefoxProfile="/home/robot/.mozilla/firefox" )
+# Start a web browser that can be accessed via mybot.driver or other mybot methods
+mybot.create_log_file()
+mybot.initialize_driver()
+mybot.get("http://www.google.com")
+mybot.log("I am accessing google")
+sleep(5)
+mybot.log_bot_completion()
+mybot.driver.quit()
+```
+
+Ahora vamos a probar que todo funciona hasta ahora ejecutando el siguiente comando desde el terminal en el escritorio virtual.
+
+```
+python run_RPA.py
+```
+
+Asegúrese de que nuestro directorio de trabajo actual sea la carpeta que contiene nuestro código. Firefox debería abrirse y acceder a google y luego apagarse después de 5 segundos. También puede verificar el estado de salida del programa escribiendo echo $ ?, cualquier cosa que no sea 0 significa que algo salió mal.
+
+Antes de continuar, vamos a inicializar la carpeta del proyecto como un repositorio git que se puede clonar y ejecutar potencialmente en una instancia de Ubuntu Virtual Desktop.
+
+Puede usar cualquier repositorio en línea que desee, en este caso simplemente crearé un repositorio privado de github en la interfaz de usuario con la siguiente url https://github.com/dkatz23238/testfinanceRPA.git y luego ejecutaré el siguiente comando desde dentro El VD donde mi trabajo se está haciendo actualmente.
+
+```
+cd /home/robot/Desktop/edgar-RPA
+git init
+git add .
+git commit -m “first commit”
+git remote add origin https://github.com/dkatz23238/testfinanceRPA.git
+git push -u origin master
+```
+
+Ahora podemos seguir el progreso de nuestro código y versionarlo.
+
+Comencemos creando los elementos funcionales de nuestro RPA. Recomiendo que creemos un archivo separado llamado RPA_activities.py desde el cual importamos nuestras actividades a nuestro archivo run_RPA.py y que nuestro RPA se ejecute desde allí.
+
+```
+touch /home/robot/Desktop/edgar-RPA/RPA_activities.py
+```
+
+Como se mencionó anteriormente, este RPA descargará informes financieros específicos del sitio web de la SEC. Cualquier RPA generalmente necesitará ingresar y generar datos comerciales, las opciones de qué usar pueden variar, pero para este RPA elegiré usar una hoja de cálculo de Hojas de cálculo de Google como entrada y usar el minio object store para la salida del documento. 
+
+Podemos crear una hoja de cálculo en GSheet y generar una URL de solo vista para que la RPA la use. Nuestro RPA puede leer estos datos en pandas.DataFrame usando:
+
+
+```
+pybotlib.utils.pandas_read_google_sheets(sheet_id)
+```
+
+Los elementos funcionales de nuestro RPA serán una función que tome la instancia de VirtualAgent como entrada y descargue una serie de informes del sitio web de la SEC navegando por el front-end del sitio web. 
+
+Se definirá una segunda función para crear una instancia de nuestro VirtualAgent y luego persistir los datos en nuestro almacén de elección correspondiente. Tendremos que pasarle al RPA algunas variables env que usará para acceder a los diferentes recursos adjuntos. 
+
+Por ahora los definiremos en el shell antes de ejecutar nuestro RPA. Primero hagamos algunas modificaciones a nuestros archivos para tener nuestras actividades en un archivo y luego nuestro segundo archivo simplemente importará las actividades y las ejecutará de la manera que definimos. En este artículo no profundizaré en los detalles de cómo RPA descarga los informes, esto se hace únicamente navegando por el front end a través del controlador web de selenio y las funciones de ayuda proporcionadas dentro de pybotlib.
+
+```
+RPA_activities.py
+run_RPA.py
+```
+
+Como se puede ver, hemos movido nuestro código y lógica empresarial al archivo RPA_activites.py y nuestro archivo run_RPA.py simplemente llamará y ejecutará el RPA como punto de entrada a nuestro RPA.
+
+Para obtener detalles sobre las formas reales en que navegamos por el front-end de la página web de la SEC, consulte la documentación del controlador web Selenium y el archivo README.md de pybotlib en github.
+
+En este punto, todo lo que tenemos que hacer es definir nuestras variables de entorno y ejecutar nuestro RPA. Recuerde que tenemos una instancia de minio en ejecución donde el RPA persistirá los datos.
+
+Nuestro código RPA utiliza variables de entorno que deben estar predefinidas para que RPA acceda a ciertos recursos adjuntos o por otros motivos. Las variables de entorno son una gran herramienta para crear código que puede convertirse fácilmente en lo más apátrida posible y utilizar cierta información, como URL, claves y contraseñas, para acceder a los recursos adjuntos. 
+
+Este es un concepto esencial de la metodología de desarrollo de aplicaciones de 12 factores sobre el que puede leer más aquí.
+
+El siguiente código ejecutado desde el terminal de escritorios virtuales debe ejecutar nuestro formulario RPA de extremo a extremo.
+
+```
+export MINIO_URL=minio;
+export MINIO_ACCESS_KEY=123456;
+export MINIO_SECRET_KEY=password;
+export MINIO_OUTPUT_BUCKET_NAME=financials;
+export GSHEET_ID=1pBecz5Db9eK0QDR_oePmamdaFtEiCaO69RaE-Ozduko;
+export DISPLAY=:1;
+python run_RPA.py
+```
+
+Una vez que nuestro RPA se ha completado, podemos acceder a los archivos a través de un navegador en el minio URL.
+
+Nuestro último paso es crear un script de shell único que pueda ejecutarse en cualquier lugar desde un Escritorio virtual y ejecutar nuestro RPA.
+
+Todo lo que necesitamos hacer es agregar los comandos anteriores a un script de shell para que seamos el único punto de entrada a nuestro RPA. Podemos llevar todo el contenido de nuestro RPA al repositorio de git y probar la clonación del repositorio desde cero y volver a ejecutar nuestro RPA. 
+
+Esto asegurará que nuestro RPA satisfará la "condición de destructibilidad". Hagamos que nuestro RPA sea un poco más amigable con la seguridad al no hacer que imprima nuestras variables "env" antes de hacer nuestro empuje final.
+
+Por ahora, este RPA es suficiente para demostrar los propósitos de este artículo, sin embargo, las mejoras a este RPA serían agregar pruebas, un mejor manejo de excepciones y una implementación automatizada. Estos temas se tratarán en el próximo artículo.
+
+Nuestro proyecto final contendrá los siguientes archivos:
+
+```
+edgar-rpa
+— run_RPA.py
+— RPA_activites.py
+— run_RPA.sh
+```
+
+Cambiar el directorio a la carpeta y ejecutar /bin/bash run_RPA.sh debería ejecutar nuestro proceso de extremo a extremo. Finalmente, podemos agregar nuestros comandos iniciales que descargan dependencias y asignan alias a nuestro script run_RPA.sh, empujarlo a git y hacer una prueba de clonación y re-ejecución para asegurar que nuestro RPA pueda ejecutarse en cualquier infraestructura en cualquier contenedor acoplable que ejecute nuestro específico Imagen de escritorio virtual.
+
+También podemos agregar variables de entorno a nuestro run_RPA.sh para ejecutar nuestro RPA desde un shell remoto sin necesidad de iniciar sesión en una GUI. Para hacer esto, simplemente podemos agregar la siguiente variable de entorno a nuestro script run_RPA.sh. Esto ya se ha agregado anteriormente.
+
+```
+export DISPLAY=:1
+```
+
+Nuestro run_RPA.sh final debería verse así:
+
+```
+#! /bin/bash
+export MINIO_URL=minio;
+export MINIO_ACCESS_KEY=123456;
+export MINIO_SECRET_KEY=password;
+export MINIO_OUTPUT_BUCKET_NAME=financials;
+export GSHEET_ID=1pBecz5Db9eK0QDR_oePmamdaFtEiCaO69RaE-Ozduko;
+export DISPLAY=:1;
+# Pip will only use the current users directory
+python3.7 -m pip install — user robot — no-cache-dir pybotlib;
+python3.7 run_RPA.py;
+```
+
+Desde la máquina host ahora podemos utilizar el escritorio virtual y ejecutar nuestro RPA de forma remota.
+
+Para probar esta funcionalidad, podemos acceder a un shell en ejecución desde nuestra máquina host a nuestro escritorio virtual en el que el RPA está destinado a ejecutarse. 
+
+En nuestro directorio que contiene el archivo docker-compose-yml, el siguiente comando iniciará un shell en nuestro cliente desde nuestro host. Tenga en cuenta que el nuevo shell que genera corresponde al contenedor y no a la máquina host. 
+
+Desde aquí podemos cd en la carpeta del directorio de código y ejecutar nuestro RPA como un comando bash y observar a través de nuestro cliente de escritorio remoto que comenzamos normalmente como si hubiera iniciado sesión a través de la interfaz de usuario.
+
+```
+docker-compose exec — user robot virtual-desktop /bin/bash
+# From within the new shell we can navigate to our code directory # and run the shell script.
+sudo -H -u robot bash -c bash run_RPA.sh
+```
+
+En este punto, podemos implementar una imagen de escritorio virtual en cualquier infraestructura que admita Docker y clonar nuestro RPA recién creado y ejecutarlo. 
+
+Potencialmente, esto le permitirá ahorrar mucho dinero en costos de tiempo de cómputo, ya que puede escalar un ejército de RPA según sus necesidades para satisfacer la demanda del trabajo.
