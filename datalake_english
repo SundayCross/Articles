@@ -37,7 +37,7 @@ Now, what do we want them for? What is the use of managing them better?
 
 As *Banko and Brill* demonstrated in 2001, spending time generating better algorithms is not as essential as making sure you have a sufficient and interpretable amount of data that improves your machine learning models.
 
-(Original image called “Figure 1”)
+![alt text](https://media-exp1.licdn.com/dms/image/C4D12AQHs4qd3nGl3JA/article-inline_image-shrink_400_744/0?e=1585785600&amp;v=beta&amp;t=5Hkmi5R20kCuOSGzFEAbcJrNmYglySpjxcRV5IGJPiE "Imagen Original denominada “Figure 1")
 
 As the authors suggested at the time, the value of increasing the volume of usable data exceeds the value generated in seeking to optimize or improve specific systems.
 
