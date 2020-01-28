@@ -1,0 +1,268 @@
++++
+title = "A primer on RPA Security Considerations"
+description = "A look at RPA vulnerabilities"
+date = 2019-10-20
+
+[taxonomies]
+marbetes = []
+"categories" = [Security]
+authors = [David Katz, Lucian V. Ditulsecu]
+
+[extra]
+bg_img_url = https://media-exp1.licdn.com/dms/image/C4D12AQGmKXYkl_4bQw/article-cover_image-shrink_720_1280/0?e=1585785600&amp;v=beta&amp;t=ExfQhGIAJVMxfJsuV_VYFJYyd_EQXyN93cEPC7p9WEw
+<!-- more -->
+
+# A primer on RPA Security Considerations
+
+## A look at RPA vulnerabilities
+
+
+### Introduction
+
+The purpose of the document is to provide an overview on what current vulnerabilities exist within RPA and how automation can be used to mitigate threats.
+
+In the current space of business, with a pressing need to digitize, RPA is a critical component of an enterprise’s digital strategy, as it is applied to various facets of its operation. An RPA programme should both leverage robotics to enable the execution of more effective and efficient internal processes as well mitigate cyber risk.
+
+RPA introduces a new attack surface that can be leveraged to disclose, steal, destroy or modify sensitive data and/or high-value information, access unauthorized applications and systems, and exploit vulnerabilities to gain further access to an organization.
+
+It cannot further be denied that there is an increasing amount of cyber attacks globally, ranging from small scale petty crime to large scale data breaches to even country wide malfunction. It is thus of great importance that more knowledge and expertise is shared on how to manage this current cyberwar.
+
+In this document we will first provide an overview on what current common vulnerabilities exist within RPA and map out a framework of governance.
+
+
+### Bot distinctions
+
+
+Bots are usually split into two categories: assisted and unassisted. 
+
+*Assisted* RPAs contribute to the process, but some actions are performed by an employee, and the task cannot be completed without human intervention. 
+
+*Unassisted* RPAs are designed for unmanned operation and provide a fully automated execution of the task.
+
+However there is a third category, *cognitive RPAs*, enhanced by Machine Learning algorithms both for decision making and self-improvement.
+
+RPAs are quite similar to End User Computing, with re-usage of an adjusted existing control framework being the most reasonable approach. Alternatively, a company might use controls designed for internally developed applications and it thus also provides a more rigid overview on potential vulnerabilities.
+
+Cognitive RPAs have a different threat landscape, which is poorly addressed in the current version of international information security standards. Companies face such issues as the reliability of machine-learning algorithms, the probability of irrelevant changes introduced by algorithms, and an inability to demonstrate the decision- making logic to the regulators.
+
+These challenges require the creation of a new control framework based on internal best practices, collaboration with other companies and consultants, as well as proactive discussions with the regulators. 
+
+
+### Ecosystem
+
+
+When it comes to securing RPA implementations, an organization must consider the technical process and human elements of the entire robotics ecosystem.
+
+A secure design should include the entire product life cycle from requirements, selection, architecture, implementation and ongoing operations. 
+
+- Integrity: Can I trust that the data and results I get from my bots has not been modified or altered?
+
+- Traceability: Am I able to monitor and track bot activities to identify the misuse of robotics affecting confidentially, integrity or availability of other systems/data?
+
+- Confidentiality: Can I protect sensitive data from being purposely or accidentally disclosed by bot creators and bot runners?
+
+- Control: Am I controlling access and protecting privileged accounts leveraged by the robotics system and users? 
+
+
+### Common cyber risks within RPA
+
+
+#### Abuse of privileged access
+
+An attacker compromises a highly privileged robotic user account used by some bots to gain access to sensitive data and move laterally within a network. 
+
+A malicious insider trains a bot to destroy high-value data, interrupting its intended function and the flow of operation.
+
+
+#### Disclosure of sensitive data
+
+A bot creator mistakenly trains a bot to upload credit card information to a database accessible via the web. 
+
+A bot creator leverages a generic account to steal sensitive intellectual property, leaving it difficult, if not impossible, to identify the true source of the leak.
+
+
+#### Software vulnerabilities
+
+A vulnerability exists in the robotics software that provides attackers remote access to an organization’s network.
+
+A bot creator trains a bot to handle sensitive customer data but does not secure/encrypt the transmission of that data to/from the cloud.
+
+
+#### Denial of service
+
+A bot is scheduled to execute in rapid sequence resulting in exhausting all available system resources and halting all bot activities. 
+
+Bot controller is disrupted due to unplanned network, service or system outage resulting in lost productivity, not easily replaced with human labor.
+
+
+#### Digital identity and access management
+
+Improve auditability (every step could be logged) and control over error-prone manual activities that can access and elevate risk and noncompliance
+
+Manage user access privileges/segregation of duties; for example, use of a specialized security platforms that authorizes bots to only perform the tasks assigned to them.
+
+Implement security controls to protect credentials during robotic session run-time; for example, the use of single sign-on (SSO) with lightweight directory access protocol (LDAP) supports secured logon to RPA interface
+
+Enforce passwords consistently across robotic sessions and centralize robotic identity and access management process; leverage encrypted credential managers to prevent leakage of credentials.
+
+
+#### Data identification and protection
+
+Conduct compliance assessment to data regulations for use of robotics and automation.
+
+Monitoring of sensitive data processed by robotics/automation to verify compliance with usage policies.
+
+Integrity checking of robotics and automation code.
+
+
+#### Security operations
+
+Gather log data from controller and bot runners to provide an audit trail of activities, monitoring for abnormal spikes in activity, access of systems and use of privileged accounts
+
+Conduct vulnerability scanning of your robotics platform and execute threat modelling exercises of robotics sessions to determine technical weaknesses or process gaps
+
+
+
+#### Software and product security
+
+Perform security architecture risk analysis of chosen RPA solutions, including bot creation, control and running. Identify security architecture flaws in underlying product for connections across various environments, usage of virtualization methodologies, and authorization flaws.
+
+Conduct secure design review, including data flow analysis to verify that controls around security are integrated into the bot authentication, authorization and input validation.
+
+Integrate security scanning tools as part of the bot creation process to scan code created in the back end for security vulnerabilities.
+
+Scan bot created for security vulnerabilities using dynamic testing or security fuzzing technology to determine security flaws
+
+
+### Real life threats: Scenarios and Details
+
+
+#### Poor governance of RPA
+
+*SCENARIO:*
+
+Your company has been using RPA for a while and has decided to assess IT risks via an independent audit. A report was prepared by a well-known consulting company and reveals that the estimated cost for the remediation of existing issues with RPAs is equal to your company’s net income for the past year, due to many poorly designed, self-made, low-quality RPAs existing in numerous departments throughout the company. 
+
+*THREAT DETAILS:*
+
+Nowadays, companies struggle to discover their assets properly due to a lack of resources. In addition, there are a large number of legacy applications, which are hard to manage, maintain and protect. RPAs are built in a way to make their creation easy, even for non-IT personnel. If no controls are built around the technology, organisations can face a huge number of software robots created in a short period, posing significant operational risks 
+
+
+##### Gaps in IAM controls
+
+*SCENARIO:*
+
+Data from your Client Relationship Management (CRM) system was stolen recently and then sold on the black market. After a security investigation, it appears that the root cause of the recent data breach was internal fraud. In fact, the data was mined via RPA, created in a back-office department by a former employee.
+
+*THREAT DETAILS:*
+
+There are some easy ways to manage credentials for RPA, such as making robots work under employee accounts or via a shared technical user. It should be clear that these practices are far from being the best choice from a security point of view.
+
+An inability to establish unified, secure and efficient IAM practices for software robots will result in operational burden, provide opportunities for internal fraud, lead to non-compliance with internal/regulatory Segregation of Duties (SoD) requirements and increase susceptibility to hacker attacks.
+
+
+#### Lack of Business Continuity
+
+*SCENARIO:*
+
+For the third day in a row your company is not able to process customer orders. RPA, which managed the processing of client requests coming via an online platform, has stopped working for an unknown reason. The remaining department employees can’t cope with the workload.
+
+*THREAT DETAILS:*
+
+Once introduced, software robots may become a single point of failure for the business processing terms of workflow or resources. If RPAs are not properly covered by a business continuity program, then a failure of a single software robot could result in a crisis situation for your company
+
+
+#### Inadequate change management
+
+*SCENARIO:*
+
+Today your company sold 100 times more goods than on any other day for the past year. Orders were accepted and processed at a much lower price than was defined on your website. Moreover, some of those orders have been shipped already. The good thing is that IT support has figured out the root case — it was the incorrect data scraping performed by the RPA after the recent update of the CRM system, which has affected the position of some data rows in GUI.
+
+*THREAT DETAILS:*
+
+Software robots as an additional asset class should be represented in the change management process/procedures. Failure to do so, along with an absence of documented dependencies on other software components, will result in service unavailability or/and errors in processing. It’s even more complicated with cognitive RPAs as they require a specific approach to change management like any other machine-learning algorithms. Self- inflicted code and algorithm changes introduced by processing new data sets represent an additional point where failure is possible.
+
+
+#### Inadequate vulnerability management
+
+*SCENARIO:*
+
+Red team is coming to you with an urgent issue they have identified during the recent pen test conducted for the perimeter of the company’s network. It seems that there is a vulnerability in the push update mechanism for the freeware RPA soft. It has existed for a long time now and has not yet been remediated by the software provider. This application is widely used to create robots within a few departments. Further investigation has uncovered an additional issue with RPA passwords stored in clear text.
+
+*THREAT DETAILS:*
+
+Both RPA software and RPA instances represent an additional threat surface. Taking into account the rapid adoption of robotics technology, it’s easy to predict that it will represent a significant concentration of risks for companies in the future. This will eventually lead to an increase in demand for vulnerabilities
+
+Password management for software robots is another topic for the discussion; if not properly managed in line with policy requirements in your company, this deficiency will provide opportunities for internal fraud and allow hackers to deploy attacks across the broad range of processes once they are able to get into your network.
+
+
+#### Inconsistency of results produced by RPA
+
+*SCENARIO:*
+
+Looking at the results of the recent regulatory reporting audit for your company, it is hard for you to accept the huge penalty for incorrectly reported tax for the last two years. The problem appeared due to the misconfiguration of rounding rules, which happened during a software update. It would have been easily spotted by accountants before, but the reporting is currently handled by unassisted RPAs, which were unable to do the same.
+
+*THREAT DETAILS:*
+
+There are plenty of problems which might lead to data errors being produced as the result of automated process execution by RPAs.
+
+Here are some of them:
+
+- Misconfiguration/bugs are present in RPA
+
+- Unpredicted change in the model of cognitive RPA 
+
+- The inability of RPA algorithm to handle an exception. Therefore, a lack of proper pre-production or/ and periodical testing will at some point result in loss of data integrity. Additionally, a loss of data integrity could also occur if tasks that should be accomplished by humans are assigned to RPAs instead. 
+
+#### Reputable damage
+
+A lack of proper pre- production or/and periodical testing will at some point result in loss of data integrity.
+
+*SCENARIO:*
+
+Recent online news portals started a campaign against your company due to the biased loan rates pricing discovered by journalists. A strong correlation between loan rates and the skin colour of the customer has been identified in the course of recent investigation performed by an independent blogger. You are more than sure that there was no such decision made in relation to the pricing. In fact, requests for loans are automatically processed and priced by newly developed cognitive RPA, and you can’t really tell how the rate is calculated after all.
+
+*THREAT DETAILS:*
+
+Machine-learning algorithms can pick up patterns or make decisions that are unacceptable from an ethical point of view. This is especially true for multinational companies. Managing different cultures could be difficult, even if proper testing for ethical issues is introduced as a control. Testers simply may not be aware of all the potential peculiarities of a specific cultural environment. In addition, reputational risks might appear in certain circumstances. There was a famous case where an Uber algorithm raised fare prices significantly during terrorist acts in London, resulting in a huge media scandal for the company.
+
+
+#### Insufficient data protection
+
+*SCENARIO:*
+
+Customers of the bank started to contact their relationship managers with the complaints regarding an incorrect statement they got via e-mail during the last distribution cycle. As statements that have been acquired belongs to the other customers. Some of them were worried about the confidentiality of their own data and personal information. Therefore they wanted to get a confirmation that no confidential data was disclosed for their accounts. At a later stage, it was discovered that an error with the robot that emailed statements to the clients caused the maldistribution.
+
+*THREAT DETAILS:*
+
+Speed and scalability of RPA should be considered when activities related to the processing of sensitive data are automated. In case of manual execution, there is a chance that error will be spotted while in progress, however with the robotics it’s not expected that any alerts are generated.
+
+### Applying RPA to field of Cyber Security
+
+Robotics can improve security reporting quality, timeliness and throughput. For example, automated, periodic security posture testing can be fed to a robotics-driven, comprehensive reporting process, providing managers of dashboards of highlighted areas of concern.
+
+It can help drive automated testing within the information security space. For example, within configuration, robotics could enable faster and more efficient compliance testing to policy for security settings on servers, firewalls, routers and applications. Tests could be conducted on a periodic basis and fed into automated dashboards etc. 
+
+Robotics can be leveraged to automate the discovery and inventory applications in the enterprise. Once discovered cognitive learning can be used to automate the risk classification of the application based on data and controls discovered. Additionally, bots can be deployed to continuously discover and update the inventory and associated controls.
+
+Cognitive learning can be used to perform gate checks for security activities in the software development life cycle (SDLC). Bots can collect information from each project management tool or through automated systems to identify when a code base is moving to the next phase of the SDLC. Rules can be set and fed into automated reporting for dash boarding, etc. to understand if the security debt on an application should be remediated. 
+
+Robotics can be used to gather automated information regarding the URLs and code that need to be tested to enable efficient analysis of the applications for vulnerabilities. Bots can enable efficient scaling of multiple applications at the same time and complete Tier 1 triage of the vulnerabilities discovered. Results of the tests can be integrated with existing developer platforms for remediation through cognitive learning bots as well.
+
+Robotics can help reduce dependency on large help desk and operations teams by automating the majority of provisioning/de-provisioning tasks. It may deliver up to 8x improvement in automated request fulfillment time frames compared to manual processing. 
+
+Robotics can help improve the efficiency and quality of access data validation, allowing managers to focus on higher-risk access concerns during the review process. It can also be trained to compose and send confirmation notifications to users if any anomalies are detected while performing data validations. 
+
+#### Data loss detection and remediation
+
+Cognitive learning can be applied to improve the accuracy of insider threat and data loss monitoring. Once issues are discovered through data loss monitoring, data security controls can be automatically deployed to remediate offending systems and prevent future issues.
+
+#### Threat detection and response
+
+Robotics can be used to gather relevant threat intelligence and technical data to enable quick and efficient analysis of malware and threat alerts. Once gathered, robotics logic can help automate the Tier 1 triage process to make decisions on when and how to respond. Additionally, automated actions can be taken to coordinate remediation of incidents.
+
+#### Threat exposure and vulnerability management
+
+Robotics can improve the efficiency and quality of the threat and vulnerability program, helping to understand enterprise vulnerabilities and prioritizing remediation activities. It can then be leveraged to automatically notify system and application administrators of the remediation activities and conduct validation to track compliance.
+
+*This document is a result of Design Thinking activities conducted at Cross Entropy Solutions lead by myself and Lucian Ditulsecu, our security consultant. To learn more about our services and work check out our webiste here.
