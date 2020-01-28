@@ -72,11 +72,11 @@ Siguiendo esta línea, podemos ver que hay distintos motivos por los que las org
 
 Para entender cómo algunas organizaciones eligen sortear estos obstáculos, consultamos al *CTO* de la compañía australiana *Melbourne Water*, **Geoff Purcell**, sobre cómo es que ellos abordan estos desafíos.
 
-*“Creo que las transformaciones digitales exitosas no suelen asentarse en tecnologías puntuales por causa de que estas varían en un lapso de 5-10 años. En cambio, sí considero que se asientan en 3 pilares esenciales:
+*“Creo que las transformaciones digitales exitosas no suelen asentarse en tecnologías puntuales por causa de que estas varían en un lapso de 5-10 años. En cambio, sí considero que se asientan en 3 pilares esenciales:*
 
-- Administración despiadada de datos.
-- Una plataforma de integración superior.
-- Mejoramiento en las capacidades digitales de la fuerza laboral.”*
+*- Administración despiadada de datos.*
+*- Una plataforma de integración superior.*
+*- Mejoramiento en las capacidades digitales de la fuerza laboral.”*
 
 Afortunadamente para nuestro mundo globalizado, el movimiento open source ha cobrado una relevancia significativa en el ámbito de la tecnología, permitiendo que los desarrollos y avances de las mejores organizaciones ofrezcan sus componentes a los desarrolladores de modo gratuito.
 
@@ -150,13 +150,17 @@ Como todo, siempre es mejor promover un crecimiento orgánico y proporcional  pa
 Visto de modo general, podemos ver que hay 3 etapas de escalabilidad:
 
 **Data Puddle**: Los “charcos” de datos suelen desarrollarse para proyectos o propósitos particulares, de uso singular, normalmente orientados a soluciones de big data. 
+
 Estos proyectos de objetivo único o limitados en su alcance suelen ser el primer paso para que las organizaciones integren tecnologías de big data, tanto funcional como culturalmente.
+
 Dado que los datos son conocidos y entendidos, contenerlos en un Data Warehouse es suficiente para procesamiento analítico y transformación. Los proyectos suelen limitarse a dashboards, reportes, visualizaciones o proyectos específicos de Machine Learning.
 
 **Data Pond**: Básicamente, este estanque consiste en una colección de “data puddles” colocados eficientemente. Esta escala permite abandonar las herramientas de BI tradicionales hacia soluciones de big data con mayores niveles de flexibilidad, normalmente orientado a los desarrolladores o usuarios técnicos.
 
 **Data Lake**: Esta escala es el nivel de autosuficiencia en datos que las organizaciones deberían aspirar a lograr como base mínima. Los Data Lakes permiten no sólo el autoservicio de datos en toda la organización, sino también contener una cantidad de datos que excedan el foco de proyectos puntuales y democratizen el uso de estos.
+
 A diferencia de un “Pond”, este sistema tiene un grado de automatización y gobernabilidad suficiente como para asegurar el cambio cultural a nivel organizacional, asegurando que los distintos sectores de la organización puedan acceder a sus herramientas y servicios.
+
 Esta herramienta permite alcanzar a los usuarios técnicos y no-técnicos de la organización, democratizando de modo efectivo el uso y acceso a los datos almacenados.
 
 **Data Swamp**: Contrario a los sistemas anteriores, un Data Swamp es algo que no queremos tener. Este “pantano” se genera cuando los datos almacenado no son utilizados o no hay un acceso suficiente. Esto sucede cuando la documentación es deficiente o las políticas de governance tornan el modelo como algo inutilizable para algunos usuarios vitales.
@@ -269,13 +273,13 @@ Dependerá de cada organización aceptar el inminente progreso o pretender esqui
 
 *“I did then what I knew how to do. Now that I know better, I do better.”*
 
-**- Maya Angelou*
+*- Maya Angelou*
 
 **Cita original de Geoff Purcell.**
-*“I increasingly believe that successful digital transformations are less based on technology, as technology will come and go over the next 5-10 years.  I do believe that successful digital transformations are based upon three things:
+“I increasingly believe that successful digital transformations are less based on technology, as technology will come and go over the next 5-10 years.  I do believe that successful digital transformations are based upon three things:
 1. Ruthless management of data,
 2. A superior integration platform
-3. Digital capability uplift of our workforce.”*
+3. Digital capability uplift of our workforce.”
 
 ### Bibliografía:
 
