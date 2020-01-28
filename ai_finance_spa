@@ -5,8 +5,8 @@ date = 2019-07-31
 
 [taxonomies]
 marbetes = []
-"categorias" = [Intelligencia Artificial]
-authors = [David Katz]
+categorias = [Intelligencia Artificial]
+autores = [David Katz]
 
 [extra]
 bg_img_url = https://media-exp1.licdn.com/dms/image/C5612AQEItg2u0HK05w/article-cover_image-shrink_720_1280/0?e=1585785600&amp;v=beta&amp;t=uXTzYncQuyiz2VAoeNEnBoi7v9Ab4F6Ll4jvmbs04Fc
