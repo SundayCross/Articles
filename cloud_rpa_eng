@@ -109,7 +109,7 @@ mybutton = mybot.find_by_tag_and_attr(“button”, “className”, “hugebutt
 
 You can also directly interact with the webdriver and use any of the Selenium methods that are provided.
 
-# Example
+#### Example
 
 ```
 mybot.driver.refresh()
@@ -328,7 +328,11 @@ We can also add an environment variables to our run_RPA.sh in order to execute o
 
 ```
 export DISPLAY=:1
-Our final run_RPA.sh script will look like this
+```
+
+Our final run_RPA.sh script will look like this:
+
+```
 #! /bin/bash
 export MINIO_URL=minio;
 export MINIO_ACCESS_KEY=123456;
