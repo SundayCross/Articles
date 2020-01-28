@@ -5,7 +5,7 @@ date = 2020-01-20
 
 [taxonomies]
 marbetes = []
-"categories" = [Data Science]
+categories = [Data Science]
 authors = [David Katz, Tomas Sande]
 
 [extra]
@@ -76,11 +76,11 @@ To understand how some organizations choose to overcome these obstacles, we cons
 
 *“I increasingly believe that successful digital transformations are less based on technology, as technology will come and go over the next 5-10 years. I do believe that successful digital transformations are based upon three things:*
 
-* 1 Ruthless management of data,*
+- *Ruthless management of data,*
 
-* 2 A superior integration platform,*
+- *A superior integration platform,*
 
-* 3 Digital capability uplift of our workforce.”*
+- *Digital capability uplift of our workforce.”*
  
 Fortunately for our globalized world, the open source movement has gained significant relevance in the field of technology, allowing the developments and advances of the best organizations to offer their components to developers for free.
 
@@ -95,7 +95,6 @@ In the case of *Netflix*, the recommendation systems based on artificial intelli
 This level of effectiveness and return demonstrates how predictable human behavior and user preferences can be, showing the benefits of establishing our decisions not only by intuition, but by seriously ponderating the alternative decisions based on information .
 
 *“The great thing about this is that every decision is a sign of a certain accumulation of daily situations, be they emotional, logistic, social, political, etc."*
-
 **- Nicolás Izcovich , Head of Data Science at Rebanking**, in direct communication with Cross Entropy.
 
 Innovation, evolution and development are a challenge and necessity for organizations of any field, not only to generate specific advantages, but also to avoid disappearing due to lack of innovative capital (as in the case of Blockbusters, Polaroid, Compaq, Kodak, among others).
@@ -155,14 +154,19 @@ Like everything else, it is always better to promote organic and proportional gr
 Seen in a general way, we can see that there are 3 stages of scalability:
 
 **Data Puddle**: The “puddles” of data are usually developed for particular projects or purposes, of singular use, normally oriented to big data solutions.
+
 These projects with a single objective or limited in scope are usually the first step for organizations to integrate big data technologies, both functionally and culturally.
+
 Since the data is known and understood, containing it in a Data Warehouse is sufficient for analytical processing and transformation.
+
 Projects are usually limited to dashboards, reports, visualizations or specific Machine Learning projects.
 
 **Data Pond**: Basically, this pond consists of a collection of “data puddles” placed efficiently. This scale allows the abandonment of traditional BI tools towards big data solutions with higher levels of flexibility, usually aimed at developers or technical users.
 
 **Data Lake**: This scale is the level of data self-reliance that organizations should aim to achieve as a minimum basis. The Data Lakes allow not only the self-service of data throughout the organization, but also contain a quantity of data that exceeds the focus of specific projects and democratizes their use.
+
 Unlike a “Pond”, this system has a degree of sufficient automation and governance to ensure cultural change at the organizational level, ensuring that the different sectors of the organization can access its tools and services.
+
 This tool allows reaching the technical and non-technical users of the organization, effectively democratizing the use and access to stored data.
 
 **Data Swamp**: Contrary to previous systems, a Data Swamp is something we don't want to have. This "swamp" is generated when the stored data is not used or there is insufficient access. This happens when documentation is poor or governance policies make the model unusable for some vital users.
