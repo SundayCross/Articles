@@ -1,0 +1,268 @@
++++
+title = "Conisderaciones sobre seguridad en RPAs"
+description = "Observando las vulnerabilidades de RPA"
+date = 2019-10-20
+
+[taxonomies]
+marbetes = []
+"categorias" = [Seguridad]
+authors = [David Katz, Lucian V. Ditulsecu]
+
+[extra]
+bg_img_url = https://media-exp1.licdn.com/dms/image/C5612AQEJKA2p-Wm18g/article-cover_image-shrink_720_1280/0?e=1585785600&amp;v=beta&amp;t=5NB0aGR4F4LFl9p0W_Vk5GAjB5MR1WOSFaAFEOQB0IY
+<!-- more -->
+
+# Conisderaciones sobre seguridad en RPAs
+
+## Observando las vulnerabilidades de RPA
+
+### Introducción
+
+El propósito de este documento es proporcionar una visión general sobre qué vulnerabilidades existen dentro de los sistemas RPA y cómo podemos usar la automatización para mitigar estas amenazas.
+
+En el espacio comercial actual, condicionado por la necesidad apremiante de digitalizar, RPA es un componente crítico de la estrategia digital de una empresa, ya que se aplica a varias facetas de su operación. Un programa RPA debería aprovechar la robótica para permitir la ejecución de procesos internos más efectivos y eficientes, así como mitigar el riesgo cibernético.
+
+RPA presenta una nueva superficie de ataque que se puede aprovechar para revelar, robar, destruir o modificar datos confidenciales y/o información de alto valor, acceder a aplicaciones y sistemas no autorizados y explotar vulnerabilidades para obtener un mayor acceso a una organización.
+
+No se puede negar que existe una creciente cantidad de ciberataques a nivel mundial, que van desde delitos menores a pequeña escala hasta violaciones de datos a gran escala que pueden lelgar a afectar el funcionamiento de todo un país. Por lo tanto, es sumamente importante compartir más conocimiento y experiencia sobre cómo gestionar esta guerra cibernética.
+
+En este documento, primero proporcionaremos una visión general sobre qué vulnerabilidades comunes existen dentro de RPA y trazaremos un marco de gobernanza.
+
+
+### Distinciones de bots
+
+
+Los motores de búsqueda los suelen dividir en dos categorías: *asistidos* y *no asistidos*.
+
+Las RPA asistidas contribuyen al proceso, pero un empleado realiza algunas acciones y la tarea no puede completarse sin intervención humana.
+
+Las RPA no asistidas están diseñadas para operaciones no tripuladas y proporcionan una ejecución totalmente automatizada de la tarea.
+
+Sin embargo, existe una tercera categoría, las *RPA cognitivas*, mejoradas por los algoritmos de Machine Learning tanto para la toma de decisiones como para la superación personal.
+
+Las RPA son bastante similares al uso de un usuario final, enfocando su reutilización dentro de un marco de control existente. Alternativamente, una empresa podría usar controles diseñados para aplicaciones desarrolladas internamente y, por lo tanto, también proporcionar una visión más rígida sobre las potenciales vulnerabilidades.
+
+Las RPA cognitivas tienen un panorama de amenazas diferente, el cual se encuentra mal abordado incluso según los estándares internacionales de seguridad de la información. Las empresas enfrentan problemas tales como la confiabilidad de los algoritmos de aprendizaje automático, la probabilidad de cambios irrelevantes introducidos por los algoritmos y la incapacidad de demostrar la lógica de toma de decisiones a los reguladores.
+
+Estos desafíos requieren la creación de un nuevo marco de control basado en las mejores prácticas internas, la colaboración con otras empresas y consultores, así como discusiones proactivas con los reguladores.
+
+
+### Ecosistema
+
+
+Cuando se trata de asegurar implementaciones de RPA, una organización debe considerar el proceso técnico y los elementos humanos de todo el ecosistema de robótica.
+
+Un diseño seguro debe incluir todo el ciclo de vida del producto, desde los requisitos, la selección, la arquitectura, la implementación y las operaciones en curso.
+
+*1. Integridad*: ¿Puedo confiar en que los datos y resultados que obtengo de mis bots no han sido modificados o alterados?      
+
+*2. Rastreabilidad*: ¿Puedo monitorear y rastrear actividades del bot para identificar el mal uso de la robótica que afecta la integridad o la disponibilidad de otros sistemas / datos?      
+
+*3. Confidencialidad*: ¿Puedo proteger los datos confidenciales para que no sean revelados a propósito o accidentalmente por creadores y corredores de bot?      
+
+*4. Control*: ¿Estoy controlando el acceso y protegiendo las cuentas privilegiadas que utilizan el sistema de robótica y los usuarios?      
+
+
+### Riesgos comunes dentro de RPA
+
+#### Abuso de acceso privilegiado
+
+Un atacante compromete una cuenta de usuario altamente privilegiada utilizada por algunos bots para obtener acceso a datos confidenciales y moverse lateralmente dentro de una red.
+
+Una persona interna maliciosa entrena a un bot para destruir datos de alto valor, interrumpiendo su función prevista y el flujo de operaciones.
+
+
+#### Divulgación de datos confidenciales.
+
+Un creador de bots entrena por error a un bot para cargar información de tarjeta de crédito a una base de datos accesible a través de la web.
+
+Un creador de bot aprovecha una cuenta genérica para robar propiedad intelectual sensible, lo que hace difícil, si no imposible, identificar la verdadera fuente de la fuga.
+
+
+#### Vulnerabilidades de software
+
+Existe una vulnerabilidad en el software de robótica que proporciona a los atacantes acceso remoto a la red de una organización.
+
+Un creador de bots entrena a un bot para manejar datos confidenciales del cliente, pero no asegura / encripta la transmisión de esos datos a/desde la nube.
+
+
+
+#### Negación de servicio
+
+Un bot está programado para ejecutarse en secuencia rápida, lo que resulta en agotar todos los recursos del sistema disponibles y detener todas las actividades del bot.
+
+El controlador de bot se interrumpe debido a una interrupción no planificada de la red, el servicio o el sistema, lo que resulta en una pérdida de productividad, que no se reemplaza fácilmente con trabajo humano.
+
+
+#### Identidad digital y gestión de acceso
+
+Mejore la auditabilidad (cada paso puede registrarse) y controle las actividades manuales propensas a errores que pueden acceder y elevar el riesgo y el incumplimiento.
+
+Gestionar privilegios de acceso de usuarios / segregación de funciones; por ejemplo, el uso de plataformas de seguridad especializadas que autorizan a los bots a realizar solo las tareas que se les asignan.
+
+Implementar controles de seguridad para proteger las credenciales durante el tiempo de ejecución de la sesión robótica; por ejemplo, el uso del inicio de sesión único (SSO) con el protocolo ligero de acceso a directorios (LDAP) admite el inicio de sesión seguro en la interfaz RPA.
+
+Haga cumplir las contraseñas de manera consistente en las sesiones robóticas y centralice la identidad robótica y el proceso de administración de acceso; aprovechar los administradores de credenciales cifradas para evitar la fuga de credenciales.
+
+
+#### Identificación y protección de datos.
+
+Llevar a cabo una evaluación de cumplimiento de las regulaciones de datos para el uso de la robótica y la automatización.
+
+Monitoreo de datos sensibles procesados por robótica / automatización para verificar el cumplimiento de las políticas de uso
+
+Comprobación de integridad de robótica y código de automatización.
+
+
+#### Operaciones de seguridad
+
+Recopilar datos de registro del controlador y los corredores de bot para proporcionar un seguimiento de auditoría de actividades, monitorear picos anormales en la actividad, acceso a sistemas y uso de cuentas privilegiadas.
+
+Realice un escaneo de vulnerabilidades de su plataforma de robótica y ejecute ejercicios de modelado de amenazas de sesiones de robótica para determinar debilidades técnicas o brechas de proceso.
+
+
+#### Software y seguridad del producto
+
+Realice un análisis de riesgos de la arquitectura de seguridad de las soluciones RPA elegidas, incluida la creación, el control y la ejecución de bot. Identifique fallas de la arquitectura de seguridad en el producto subyacente para conexiones en varios entornos, uso de metodologías de virtualización y fallas de autorización.
+
+Realice una revisión segura del diseño, incluido el análisis del flujo de datos para verificar que los controles en torno a la seguridad estén integrados en la autenticación, autorización y validación de entrada del bot.
+
+Integre las herramientas de escaneo de seguridad como parte del proceso de creación de bot para escanear el código creado en el back-end en busca de vulnerabilidades de seguridad.
+
+Scan bot creado para detectar vulnerabilidades de seguridad utilizando pruebas dinámicas o tecnología de fuzzing de seguridad para determinar fallas de seguridad
+
+
+### Amenazas de la vida real: escenarios y detalles
+
+#### Mala gobernanza de RPA
+
+*ESCENARIO:*
+
+Su empresa ha estado utilizando RPA durante un tiempo y ha decidido evaluar los riesgos de TI a través de una auditoría independiente. Una conocida empresa de consultoría preparó un informe que revela que el costo estimado para la reparación de problemas existentes con RPA es igual al ingreso neto de su empresa durante el año pasado, debido a muchos deficientemente diseñados, de fabricación propia y de baja calidad. Hay RPA existentes en numerosos departamentos de toda la empresa.
+
+*DETALLES DE AMENAZA:*
+
+Hoy en día, las empresas luchan por descubrir sus activos adecuadamente debido a la falta de recursos. Además, hay una gran cantidad de aplicaciones heredadas, que son difíciles de administrar, mantener y proteger. Los RPA se crean para facilitar su creación, incluso para el personal que no es de TI. Si no se construyen controles en torno a la tecnología, las organizaciones pueden enfrentar una gran cantidad de robots de software creados en un período corto, lo que plantea riesgos operativos significativos.
+
+
+#### Brechas en los controles de IAM
+
+*ESCENARIO:*
+
+Los datos de su sistema de Gestión de la relación con el cliente (CRM) fueron robados recientemente y luego vendidos en el mercado negro. Después de una investigación de seguridad, parece que la causa raíz de la reciente violación de datos fue el fraude interno. De hecho, los datos se extrajeron a través de RPA, creado en un departamento administrativo por un ex empleado.
+
+*DETALLES DE AMENAZA:*
+
+Hay algunas formas fáciles de administrar las credenciales para RPA, como hacer que los robots funcionen bajo las cuentas de los empleados o mediante un usuario técnico compartido. Debe quedar claro que estas prácticas están lejos de ser la mejor opción desde el punto de vista de la seguridad.
+
+La incapacidad de establecer prácticas de IAM unificadas, seguras y eficientes para los robots de software resultará en una carga operativa, proporcionará oportunidades de fraude interno, conducirá al incumplimiento de los requisitos de Segregación de Deberes (SoD) internos / regulatorios y aumentará la susceptibilidad a ataques de piratas informáticos.
+
+
+#### Falta de continuidad del negocio
+
+*ESCENARIO:*
+
+Por tercer día consecutivo, su empresa no puede procesar los pedidos de los clientes. El RPA que gestionó el procesamiento de las solicitudes de los clientes que llegan a través de una plataforma en línea ha dejado de funcionar, por una razón desconocida. Los empleados restantes del departamento no pueden hacer frente a la carga de trabajo.
+
+*DETALLES DE AMENAZA:*
+
+Una vez introducidos, los robots de software pueden convertirse en un punto único de falla para el procesamiento de negocios, flujo de trabajo o recursos. Si las RPA no están cubiertas adecuadamente por un programa de continuidad del negocio, la falla de un solo robot de software podría generar una situación de crisis para su empresa.
+
+
+#### Gestión inadecuada del cambio
+
+*ESCENARIO:*
+
+Hoy su empresa vendió 100 veces más productos que en cualquier otro día del año pasado. Los pedidos fueron aceptados y procesados a un precio mucho más bajo que el definido en su sitio web. Además, algunos de esos pedidos ya han sido enviados. Lo bueno es que el soporte de TI ha descubierto el caso raíz: fue el raspado de datos incorrecto realizado por el RPA después de la reciente actualización del sistema CRM, lo que ha afectado la posición de algunas filas de datos en la GUI.
+
+*DETALLES DE AMENAZA:*
+
+Los robots de software como una clase de activo adicional deben estar representados en el proceso / procedimientos de gestión de cambios. De lo contrario, junto con la ausencia de dependencias documentadas en otros componentes de software, se producirá la falta de disponibilidad del servicio y / o errores en el procesamiento. Es aún más complicado con las RPA cognitivas, ya que requieren un enfoque específico para la gestión del cambio como cualquier otro algoritmo de aprendizaje automático. El código autoinfligido y los cambios de algoritmo introducidos al procesar nuevos conjuntos de datos representan un punto adicional de posibles fallas.
+
+
+#### Gestión iandecuada de vulnerabilidades
+
+*ESCENARIO:*
+
+El equipo rojo está llegando a usted con un problema urgente que han identificado durante la reciente prueba realizada sobre el perímetro de la red de la compañía. Parece que hay una vulnerabilidad en el mecanismo de actualización de inserción para el software gratuito RPA soft. Ha existido durante mucho tiempo y el proveedor de software aún no lo ha remediado. Esta aplicación es ampliamente utilizada para crear robots en unos pocos departamentos. La investigación ha descubierto otro problema adicional, las contraseñas RPA almacenadas en texto sin cifrar.
+
+*DETALLES DE AMENAZA:*:
+
+Tanto el software RPA como las instancias RPA representan una superficie de amenaza adicional. Teniendo en cuenta la rápida adopción de la tecnología robótica, es fácil predecir que representará una concentración significativa de riesgos para las empresas en el futuro. Esto eventualmente conducirá a un aumento en la existencia de vulnerabilidades.
+
+La gestión de contraseñas para robots de software es otro tema de debate; Si no se gestiona adecuadamente de acuerdo con los requisitos de la política de su empresa, esta deficiencia proporcionará oportunidades de fraude interno y permitirá a los piratas informáticos implementar ataques en la amplia gama de procesos una vez que puedan ingresar a su red.
+
+
+#### Inconsistencia de resultados producidos por RPA
+
+*ESCENARIO:*
+
+Al observar los resultados de la reciente auditoría de informes regulatorios para su empresa, le resulta difícil aceptar la gran multa por impuestos incorrectamente informados durante los últimos dos años. El problema apareció debido a la configuración incorrecta de las reglas de redondeo, que ocurrió durante una actualización de software. Los contadores lo habrían detectado fácilmente antes, pero los informes son manejados actualmente por RPA sin asistencia, que no pudieron hacer lo mismo.
+
+*DETALLES DE AMENAZA:*:
+
+Existen muchos problemas que pueden generar errores en los datos como resultado de la ejecución automatizada de procesos por parte de RPA.
+
+Éstos son algunos de ellos:
+
+1. La mala configuración / errores presentes en RPA.
+
+2. Cambio imprevisto en el modelo de RPA cognitiva.    
+
+3. La incapacidad del algoritmo RPA para manejar una excepción. Por lo tanto, la falta de una producción adecuada y / o pruebas periódicas ocasionará en algún momento la pérdida de la integridad de los datos. Además, también podría ocurrir una pérdida de integridad de los datos si las tareas que deben realizar los humanos se asignan a las RPA.
+
+
+#### Daño reputable
+
+*ESCENARIO:*
+
+Los recientes portales de noticias en línea comenzaron una campaña contra su empresa debido a los precios sesgados de las tasas de préstamos descubiertos por los periodistas. En el curso de una investigación reciente realizada por un blogger independiente, se identificó una fuerte correlación entre las tasas de préstamos y el color de la piel del cliente. Usted está más que seguro de que no se tomó tal decisión en relación con el precio. De hecho, las solicitudes de préstamos son procesadas y valoradas automáticamente por el RPA cognitivo recientemente desarrollado, y después de todo, no se puede saber cómo se calcula la tasa.
+
+*DETALLES DE AMENAZA:*
+
+Los algoritmos de aprendizaje automático pueden detectar patrones o tomar decisiones que son inaceptables desde un punto de vista ético. Esto es especialmente cierto para las empresas multinacionales. Administrar diferentes culturas podría ser difícil, incluso si se introducen las pruebas adecuadas para los problemas éticos como control. Los probadores simplemente pueden no ser conscientes de todas las peculiaridades potenciales de un entorno cultural específico. Además, los riesgos de reputación pueden aparecer en ciertas circunstancias. Hubo un caso famoso en el que un algoritmo de Uber aumentó significativamente los precios de las tarifas durante los actos terroristas en Londres, lo que resultó en un gran escándalo mediático para la compañía.
+
+
+#### Protección de insuficiente de los datos
+
+*ESCENARIO:*
+
+Los clientes del banco comenzaron a contactar a sus gerentes de relaciones con las quejas sobre una declaración incorrecta que recibieron por correo electrónico durante el último ciclo de distribución. Como las declaraciones que se han adquirido pertenecen a los otros clientes, algunos de ellos estaban preocupados por la confidencialidad de sus propios datos e información personal. Por lo tanto, querían obtener una confirmación de que no se divulgaron datos confidenciales para sus cuentas. En una etapa posterior, se descubrió que un error con el robot que envió por correo electrónico declaraciones a los clientes causó la errónea distribución.
+
+*DETALLES DE AMENAZA:*
+
+La velocidad y la escalabilidad de RPA deben considerarse cuando las actividades relacionadas con el procesamiento de datos confidenciales están automatizadas. En caso de ejecución manual, existe la posibilidad de que se detecte un error mientras está en progreso, sin embargo, con la robótica no se espera que se generen alertas.
+
+
+### Aplicando RPA al campo de la Seguridad Cibernética
+
+La robótica puede mejorar la calidad de los informes de seguridad, la puntualidad y el rendimiento. Por ejemplo, las pruebas de postura de seguridad periódicas y automatizadas se pueden alimentar a un proceso integral de informes, proporcionando a los gerentes de tableros de instrumentos las áreas de interés destacadas.
+
+En suma, puede contribuir a impulsar las pruebas automatizadas dentro del espacio de seguridad de la información. Por ejemplo, dentro de la configuración, la robótica podría permitir pruebas de cumplimiento más rápidas y eficientes para la política de configuración de seguridad en servidores, firewalls, enrutadores y aplicaciones. Las pruebas podrían realizarse periódicamente y alimentarse a paneles automáticos, etc.
+
+La robótica se puede aprovechar para automatizar las aplicaciones de descubrimiento e inventario en la empresa. Una vez descubierto, el aprendizaje cognitivo se puede utilizar para automatizar la clasificación de riesgos de la aplicación en función de los datos y controles descubiertos. Además, los bots se pueden implementar para descubrir y actualizar continuamente el inventario y los controles asociados.
+
+El aprendizaje cognitivo se puede utilizar para realizar verificaciones de puerta para actividades de seguridad en el ciclo de vida de desarrollo de software (SDLC). Los bots pueden recopilar información de cada herramienta de gestión de proyectos o mediante sistemas automatizados para identificar cuándo una base de código se está moviendo a la siguiente fase del SDLC. Las reglas se pueden establecer y alimentar en informes automáticos para el tablero de instrumentos, etc. para comprender si la deuda de seguridad en una aplicación debe corregirse.
+
+La robótica se puede utilizar para recopilar información automatizada sobre las URL y el código que deben probarse para permitir un análisis eficiente de las aplicaciones en busca de vulnerabilidades. Los bots pueden permitir el escalado eficiente de múltiples aplicaciones al mismo tiempo y completar la clasificación de Nivel 1 de las vulnerabilidades descubiertas. Los resultados de las pruebas se pueden integrar con las plataformas de desarrolladores existentes para la remediación a través de bots de aprendizaje cognitivo.
+
+Otro benefcio consiste en reducir la dependencia de grandes equipos de soporte técnico y operaciones al automatizar la mayoría de las tareas de aprovisionamiento / desaprovisionamiento. Puede ofrecer una mejora de hasta 8 veces en los plazos automáticos de cumplimiento de solicitudes en comparación con el procesamiento manual.
+
+Adems, hay que destacar que contribuye a mejorar la eficiencia y la calidad de la validación de datos de acceso, lo que permite a los gerentes centrarse en las preocupaciones de acceso de mayor riesgo durante el proceso de revisión. También se puede entrenar para redactar y enviar notificaciones de confirmación a los usuarios si se detectan anomalías al realizar validaciones de datos.
+
+
+#### Detección de pérdida de datos y remediación
+
+El aprendizaje cognitivo se puede aplicar para mejorar la precisión de la vigilancia de amenazas internas y pérdida de datos. Una vez que se descubren problemas a través de la supervisión de pérdida de datos, los controles de seguridad de datos se pueden implementar automáticamente para remediar los sistemas ofensivos y evitar problemas futuros.
+
+
+#### Detección de amenazas y respuesta
+
+La robótica se puede utilizar para recopilar información relevante sobre amenazas y datos técnicos para permitir un análisis rápido y eficiente de malware y alertas de amenazas. Una vez reunida, la lógica robótica puede ayudar a automatizar el proceso de clasificación de Nivel 1 para tomar decisiones sobre cuándo y cómo responder. Además, se pueden tomar acciones automatizadas para coordinar la reparación de incidentes.
+
+
+#### Exposición a amenazas y gestión de vulnerabilidades
+
+La robótica puede mejorar la eficiencia y la calidad del programa de amenazas y vulnerabilidades, ayudando a comprender las vulnerabilidades empresariales y priorizando las actividades de reparación. Luego se puede aprovechar para notificar automáticamente a los administradores de sistemas y aplicaciones sobre las actividades de remediación y realizar la validación para rastrear el cumplimiento.
+
+* Este documento es el resultado de las actividades de Design Thinking realizadas en Cross Entropy Solutions, lideradas por mí y Lucian Ditulsecu, nuestro consultor de seguridad.
