@@ -5,7 +5,7 @@ date = 2019-07-31
 
 [taxonomies]
 marbetes = []
-"categories" = [Artificial Intelligence]
+categories = [Artificial Intelligence]
 authors = [David Katz]
 
 [extra]
@@ -16,6 +16,7 @@ bg_img_url = https://media-exp1.licdn.com/dms/image/C5612AQEItg2u0HK05w/article-
 # 3 ways AI is changing Finance
 
 ## A Quick Look into AI
+
 
 The ever growing decrease in the cost of computation, the digitization of real world data for online processing, and the advances in AI has changed every aspect of conducting business around the world. Although FAANG were really the first enterprises in using big data and massive computation to drive their business decisions, the rest of the business spectrum promptly followed. 
 
