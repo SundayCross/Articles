@@ -1,0 +1,97 @@
++++
+title = "Legal Analytics"
+description = "Una breve introducción"
+date = 2019-12-05
+
+[taxonomies]
+marbetes = []
+categorias = [LegalTech]
+autores = [Tomas Sande, David Katz, Cecilia L. Ocampo]
+
+[extra]
+bg_img_url = 
+<!-- more -->
+
+# Legal Analytics.
+
+## Una breve introducción.
+
+
+La generación de nuevas tecnologías siempre acarrea un impacto irreversible en cualquier mercado, siendo la innovación un disruptor permanente que se inserta fácilmente en la generalidad de los mercados. Las tecnologías de machine learning, inteligencia artificial y la ciencia de datos son esenciales para mantener una posición de vanguardia, pero el derecho ha elegido ignorarlas deliberadamente por mucho tiempo, hasta la actualidad.
+
+Mucho se debatió en épocas recientes sobre los motivos por lo que esto sucedía, siendo la observación principal la falta de necesidad de los estudios o firmas de abogados de renovar sus propuestas a la hora de captar nuevos clientes. Desgraciadamente, esta falta de necesidad contribuye a que carezcamos de proyectos que faciliten la tarea profesional de los abogados, siendo evidente la falta de acceso a las nuevas tecnologías que podrían dar un impulso muy necesitado en el campo legal.
+
+
+### ¿Datos? Todos los necesitamos.
+
+
+Legal Analytics está cambiando no sólo nuestra manera de abordar la profesión legal, sino también de cómo interactuamos con otras áreas del mercado. Como señala Robert Sancrainte en “Introduction to Legal Analytics”, los individuos y organizaciones están cambiando la eficiencia de sus procesos de toma de decisiones mediante la incorporación y procesamiento de datos.
+
+Este movimiento tecnológico hacia la explotación de datos afecta todos los niveles del mercado, siendo un potenciador indispensable para mejorar los sistemas y procesos internos de las organizaciones en general.
+
+En el marco del derecho, Legal Analytics trae beneficios a la hora de tomar decisiones en base al procesamiento de datos propios del área legal, orientando la tarea de los abogados no sólo por inferencias genéricas fundadas en su saber técnico, sino con la concreta aplicación de modelos estadísticos que complementen las tareas de análisis, proyección y toma de decisiones.
+
+La aplicación de modelos de Machine Learning puede definirse como una rama de los sistemas de Inteligencia Artificial destinada a aprender sin necesidad de programar cuestiones específicas. Esto no implica que basta con tan sólo definir parámetros y dejar el modelo correr, todo lo contrario, debemos primero recolectar los datos para alimentar y entrenar nuestro modelo, adecuandolo a la búsqueda y análisis específico de los campos que queremos potenciar.
+
+
+### Entrenamiento de Datos. 
+
+#### Modelando Nuestro Cerebro Virtual.
+
+
+Para lograr nuestro modelo de machine learning, vamos a necesitar recolectar y seleccionar los datos que vamos a utilizar. Según la necesidad u objetivos de cada organización, los datos requeridos se limitan a aquellos que provengan del área específica que se quiere analizar.
+
+A grandes rasgos, una vez recolectados y seleccionados los datos, y entrenado el modelo, este podrá comenzar a generalizar, es decir, operar en el análisis de nuevos datos para realizar las proyecciones esperadas sobre los datos que se incorporen a futuro, dejando en manos del sistema el análisis, distribución y procesamiento de los datos novedosos. 
+
+En esta etapa es donde los modelos generalmente presentan sus deficiencias, por lo que un desarrollo ágil e iterativo garantiza una manera eficiente de incrementar la complejidad del sistema, minimizando costos y tiempos de entrega, permitiendo un enfoque claro en los aspectos a mejorar. El armado y mejoramiento del “decision tree”, a través de procesos de validación cruzada (“cross validation”), permite que incrementemos la confiabilidad de nuestros modelos.
+
+
+### Lex ex machina.
+
+
+En el campo legal, sabemos que las leyes son creadas por y para individuos, personas de cualquier naturaleza, por lo que tendemos a negar la capacidad de las llamadas “ciencias duras” de contribuir en un ámbito tan entrópico como el ámbito de lo social.
+
+Desgraciadamente, tendemos a ignorar los preconceptos y prejuicios inherentes a todas las personas, cuestión de la cual no escapan quienes operan en el campo legal. Es en este punto donde el aporte de las tecnologías de machine learning se torna esencial, dado que permite trasponer los preconceptos y analizar datos crudos de modo puro, otorgando una mirada más imparcial u objetiva a cuestiones específicas.
+
+Machine learning no tiene por qué reemplazar el proceso de toma de decisiones a cargo de los individuos, pero si trae los beneficios de un “check and balance” para contraponer nuestras decisiones con el asesoramiento objetivo de un relevamiento imparcial de datos, no condicionado por nuestros preconceptos.
+
+Un ejemplo de las aplicaciones de modelos de machine learning resulta ser su aplicación para predecir sentencias o fallos judiciales. El conocido programa FantasySCOTUS, de los Estados Unidos, consiste en un concurso donde varios operadores del campo legal modelan sus sistemas de machine learning para lograr el mayor porcentaje de predicción de resultados sobre sentencias de la Corte Suprema de Justicia en ese país.
+
+Utilizando el método “Random Forest Classifiers”, se ha logrado implementar modelos predictivos con un porcentaje del 70.2% de certeza sobre el resultado de las decisiones, asimilable a predecir correctamente 7 de cada 10 casos ingresados (en base a un análisis histórico de precedentes).
+
+Lentamente, el campo legal va absorbiendo los beneficios y desafíos de las nuevas tecnologías, posicionando su mira en la búsqueda de aplicaciones prácticas para tareas que actualmente requieren de grandes equipos para abordar grandes volúmenes de trabajo (v.gr. tareas de due diligence, modelos predictivos, etc.).
+
+
+### Destrucción Creativa.
+
+
+Mientras los preconceptos sobre lo que es posible y lo que no en el campo del derecho son lentamente desbaratados, las nuevas tecnologías traen un cambio de paradigma sobre nuestra manera de abordar y trabajar el derecho, además de repensar el modo en que realizamos tareas y abordamos problemas que, hasta el momento, sólo confiaban en la mirada humana, con los errores que esta acarrea.
+
+La tecnología no busca reemplazarlos, sino ayudarnos a potenciar nuestra capacidad de abordar problemas y encontrar soluciones innovadoras, elementos esenciales en el mercado actual, regido por la innovación y competencia en sus distintos niveles.
+
+Como observó Schumpeter en su momento, las prácticas obsoletas serán desmanteladas por la propia creación destructiva de sistema capitalista, en tanto este exige el impulso permanente hacia nuevas formas de generar progreso e innovación, dada la propia voracidad y competencia inmanente a nuestros modelos económicos.
+En definitiva, incorporar nuevas tecnologías a nuestros sistemas legales no es más una cuestión de contribuir al desarrollo de nuevas ciencias, sino que es un requerimiento para mantenernos competitivos en un mercado que, inobjetablemente, se halla sumido en lo que algunos entienden como una nueva revolución industrial. 
+
+El campo legal no es la excepción a estos cambios, quienes decidan ajenarse a la innovación quedarán, como todo eventualmente, obsoletos.
+
+*“Speaking of a new world order, the future has already arrived for us lawyers too; it’s just not evenly distributed yet.”*
+**- William Gibson.**
+
+
+### Bibliografía
+
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 1, artículo distribuido por LexPredict, Elevate Business, 30 de Agosto del 2018. Link:https://www.lexpredict.com/2016/09/intro-part-1-legal-analytics/.
+
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 3: MACHINE LEARNING, artículo distribuido por LexPredict, Elevate Business, 10 de Octubre del 2016. Link: https://www.lexpredict.com/2016/10/intro-legal-analytics-part-3-machine-learning/.
+ 
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 4: GROWING OUR (DECISION) TREE, artículo distribuido por LexPredict, Elevate Business, 16 de Octubre del 2016. Link:https://www.lexpredict.com/2016/10/intro-legal-analytics-part-4-decision-tree/
+ 
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 5: DECISION-MAKING MADE EASIER, artículo distribuido por LexPredict, Elevate Business, 24 de Octubre del 2016. Link:https://www.lexpredict.com/2016/10/intro-legal-analytics-part-5-decision-making/
+
+Katz, Daniel Martin and Bommarito, Michael James and Blackman, Josh, A General Approach for Predicting the Behavior of the Supreme Court of the United States (January 16, 2017). Available at SSRN: https://ssrn.com/abstract=2463244 or http://dx.doi.org/10.2139/ssrn.2463244
+
+Michael Luca, Jon Kleinberg and Sendhil Mullainathan, “Algorithms Need Managers, Too.”, Harvard Business Review, Reprint R1601H, originally January-February 2016.
+
+Schumpeter, Joseph A., “Creative Destruction: From Capitalism, Socialism and Democracy”. Harper, New York, 1975, orig. pub. 1942.
+
+Sande, Tomas. “Schumpeter’s Creative Destruction”. Medium. Link: https://medium.com/@tomassande96/https-medium-com-schumpeters-creative-destruction-a9aad6c8a3df
