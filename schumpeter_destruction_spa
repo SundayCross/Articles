@@ -13,14 +13,14 @@ bg_img_url = "https://media-exp1.licdn.com/dms/image/C4D12AQEz9hKxZ_YTsA/article
 +++
 
 
-Schumpeter’s Creative Destruction. 
-The new Artificial ways of Natural Selection. 
+# Schumpeter’s Creative Destruction. 
+## The new Artificial ways of Natural Selection. 
 
-- No Data, No Future.
+### - No Data, No Future.
 
-“Curly: Uh-oh, he's snuffocatin'!
-Larry: Don't worry, I know the Heineken maneuver!”
--The Three Stooges.
+*“Curly: Uh-oh, he's snuffocatin'!*
+*Larry: Don't worry, I know the Heineken maneuver!”*
+**-The Three Stooges.**
 
 Today’s public/private goods and services providers face a novel and difficult task, keeping up with data processing, its accumulation, protection, and its controlling regulation, together with the need of achieving what many have called the “new industrial revolution” standards.
 
@@ -32,7 +32,9 @@ The above mentioned quote has a clear intention (besides the giggles it may prov
 
 For those who do notice this severe problem, their are not always able to identify the methods which are appropriate for overcoming the new requirements imposed by our age of digital selection.
 
-- Data Science. Not an option anymore.
+
+### - Data Science. Not an option anymore.
+
 
 For almost every action, transaction, sale, complaint, interaction between subjects, or individual behaviours, data is generated. 
 
@@ -46,10 +48,12 @@ The problem is clear, not every organization has access to the benefits provided
 
 The disparity between organizations that have a clear and proficient data science program, and those that don’t, is manifest, as the latter will not have access to any of the tools provided by this technology (data visualization, data analysis, data processing, data mining, etc.). Kodak, Nokia, Blockbuster, Blackberry, are just some of the myriad of organizations that failed to adopt data driven and innovative market solutions.
 
-- A.I. Terminator likes to help.
 
-“Algorithms capable of making predictions do not eliminate the need for care when drawing connections between cause and effect; they are not a replacement for controlled experiments. But what they can do is extremely powerful: identifying patterns to subtle to be detected by human observation, and using those patterns to generate accurate insights and inform better decision making The challenge for us is to understand their risks and limitations  and, through effective management, unlock their remarkable potential.”
-Harvard Business Review.
+### - A.I. Terminator likes to help.
+
+
+*“Algorithms capable of making predictions do not eliminate the need for care when drawing connections between cause and effect; they are not a replacement for controlled experiments. But what they can do is extremely powerful: identifying patterns to subtle to be detected by human observation, and using those patterns to generate accurate insights and inform better decision making The challenge for us is to understand their risks and limitations  and, through effective management, unlock their remarkable potential.”*
+**Harvard Business Review.**
 
 Mere data collections would be utterly useless if there was nobody to analyze them, similar to libraries filled with texts written in an incomprehensible language (programmers are familiar with such ironies). 
 
@@ -75,7 +79,9 @@ During the 1950’s, there was no conceivable way of googling pictures of cute c
 
 Machine Learning helps Businesses accelerate the time that it takes to extract valuable information from vasts amounts of unstructured, inconsistent, and high volumes of data. Classical statistics are also adding more value every day as the amount of data available to analysts grows exponentially. 
 
-- Data Processing & Storing. GDPR, no tricks allowed
+
+### - Data Processing & Storing. GDPR, no tricks allowed
+
 
 For anyone who has not been living under a rock (provided no wifi is available), it is clear that Data Regulations today are starting to catch up to the technological benefits reaped until this day. Abusive and non-consensual data mining, processing, storing and distribution have generated increased outrage among certain countries and political classes, resulting this in more strict data controlling and storing methods.
 
@@ -87,44 +93,50 @@ In other words, Data Storing, Processing, Mining, Transfering & Analyzing must c
 
 Any solution that allows businesses to mitigate the risks associated with data compliance contributes to their transparency, while also diminishing the operational costs derived from fines and penalties.
 
-- RPA. Robotic Process Automation.
 
-Domo Arigato Mr. Roboto
--Styx.
+### - RPA. Robotic Process Automation.
 
-ROBOTIC PROCESS AUTOMATION (intended bold capital letters) is not just a tool, it is a paradigm which has the potential to revolutionize the current labor market.
+*"Domo Arigato Mr. Roboto."*
+**-Styx.**
+
+
+**ROBOTIC PROCESS AUTOMATION** (intended bold capital letters) is not just a tool, it is a paradigm which has the potential to revolutionize the current labor market.
 
 Many confuse the terms AI and RPA when it comes to automated processes within an organization, which is not only a common, but a pretty significant mistake. RPA is the use of virtual robots to conduct activities, mimicking human work with additional machine computation, in order to automate business processes.
 
 Due to the wide amount of human activities that are conducted within an organization, RPA systems allow for a wide range of use cases and implementation practices. RPA’s can be simple rule based robots that perform simple tasks (like data entry), or they can be a fully orchestrated variety of sub-robots and AI models, automating more complex and sophisticated business practices.
 
-
 RPA is a self sufficient technology, as the market for this particular solution has grown in such manner that it actually leads the tip of digital transformation, having impacted every organizational aspect, from customer management, to infrastructure and business models as a whole.
 
 “The top three RPA software companies are approaching values in excess of 10 billion.” Craig Le Clair, Principal Analyst. Forrester.
 
-- True Value.
 
-	One can not deny the value that RPA is creating for industries and companies as a whole, serving states and enterprises in optimizing and reducing operational costs.
+### - True Value.
 
-	In the case of government institutions, digitizing and automating processes allows for the most potential productivity gains. Governments should aim to digitize high volume services, labor intensive and costly processes, as their are to obtain the highest gains by focusing on this much needed categories.
 
-	The companies that develop RPA technologies are currently fast-paced, highly-valued organizations, as they are the ones that drive general process optimization around the world, having the potential to accelerate the implementation of all the other technologies we have talked about.
+One can not deny the value that RPA is creating for industries and companies as a whole, serving states and enterprises in optimizing and reducing operational costs.
 
-“The most successful companies in the world today run on software and employ fewer employees than their predecessors. Facebook employs only 25,000 people. It generates a staggering $1.6 million in revenue for each one. Apple generates $1.85 million per employee, and Google parent Alphabet generates $1.2 million.” Craig Le Clair, Vice President. Forrester.
+In the case of government institutions, digitizing and automating processes allows for the most potential productivity gains. Governments should aim to digitize high volume services, labor intensive and costly processes, as their are to obtain the highest gains by focusing on this much needed categories.
 
--Surviving.
+The companies that develop RPA technologies are currently fast-paced, highly-valued organizations, as they are the ones that drive general process optimization around the world, having the potential to accelerate the implementation of all the other technologies we have talked about.
 
-“First I was afraid, I was terrified”
-			-Gloria Gaynor. “I will survive”.
 
-	As Charles Darwing exposed in his work “On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life”, adaptation is key for evolutionary survivability. Those beings which are not capable of facing a changing environment will eventually disappear.
+*“The most successful companies in the world today run on software and employ fewer employees than their predecessors. Facebook employs only 25,000 people. It generates a staggering $1.6 million in revenue for each one. Apple generates $1.85 million per employee, and Google parent Alphabet generates $1.2 million.”* 
+**- Craig Le Clair, Vice President. Forrester.**
 
-	Taking into account the fast pace of our current technological developments, everyone should be informed of the benefits that the most advanced technologies provide for them. Those who do not adopt newer methods and processes will be obsolete, victims of the newer waves of innovation.
+### -Surviving.
+
+*“First I was afraid, I was terrified”*
+**-Gloria Gaynor. “I will survive”.**
+
+As Charles Darwing exposed in his work “On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life”, adaptation is key for evolutionary survivability. Those beings which are not capable of facing a changing environment will eventually disappear.
+
+Taking into account the fast pace of our current technological developments, everyone should be informed of the benefits that the most advanced technologies provide for them. Those who do not adopt newer methods and processes will be obsolete, victims of the newer waves of innovation.
 
 As Schumpeter described, obsolete practices will be dismantled by the Creative Destruction process, as the capitalist system exhibits this relentless drive towards progress and innovation.
 
-Bibliography.
+
+### Bibliography.
 
 https://www.mckinsey.com/industries/public-sector/our-insights/when-governments-turn-to-ai-algorithms-trade-offs-and-trust “When governments turn to AI: Algorithms, trade-offs, and trust”, Anusha Dhasarathy, Sahil Jain, & Naufal Khan, McKinsey & Company, McKinsey Insights, February, 2019.
 
@@ -135,7 +147,6 @@ https://www.forbes.com/sites/danielnewman/2019/08/14/rpa-in-the-real-world-drivi
 https://go.forrester.com/blogs/predictions-2019-automation-technology "How Automation Is Impacting Enterprises In 2019”, Craig Le Clair, Blogs, Forrester, Apr 23 2019
 
 https://www.mckinsey.com/industries/public-sector/our-insights/transforming-government-through-digitization “Transforming government through digitization”, Bjarne Corydon, Vidhya Ganesan, and Martin Lundqvist, McKinsey & Company, McKinsey Insights, November 2016
-
 
 “Algorithms Need Managers, Too.”, Michael Luca, Jon Kleinberg and Sendhil Mullainathan, Harvard Business Review, Reprint R1601H, originally January-February 2016.
 
