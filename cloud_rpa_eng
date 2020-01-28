@@ -5,7 +5,7 @@ date = 2019-05-19
 
 [taxonomies]
 marbetes = []
-"categories" = [RPA]
+categories = [RPA]
 authors = [David Katz]
 
 [extra]
