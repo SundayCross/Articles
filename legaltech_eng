@@ -1,0 +1,100 @@
++++
+title = "Legal Analytics"
+description = "Una breve introducción"
+date = 2019-12-05
+
+[taxonomies]
+marbetes = []
+categorias = [LegalTech]
+autores = [Tomas Sande, David Katz, Cecilia L. Ocampo]
+
+[extra]
+bg_img_url = 
+<!-- more -->
+
+# Legal Analytics.
+
+## A brief introduction.
+
+
+New technologies have always had an irreversible impact on any market, with innovation being a permanent disruptor. Machine learning, Artificial Intelligence and Data Science technologies are essential to maintain a leading position, but the law has chosen to deliberately ignore them for a long time, until today.
+
+Much was discussed in recent times about the reasons why this happened, the main observation being the lack of need for law firms or firms to renew their proposals when it comes to attracting new clients. Unfortunately, this lack of need contributes to the lack of projects oriented towards facilitating the professional task of lawyers, together with a lack of access to new technologies that could give a much needed boost in the legal field.
+
+
+### Data? We all need it.
+
+
+Legal Analytics is changing not only our way of approaching the legal profession, but also how we interact with other areas of the market. As Robert Sancrainte points out in "Introduction to Legal Analytics," individuals and organizations are changing the efficiency of their decision-making processes by incorporating and processing data.
+
+This technological movement towards the exploitation of data affects all levels of the market, being an indispensable enhancer to improve the internal systems and processes of organizations in general.
+
+Under the law, Legal Analytics brings benefits when making decisions based on the processing of data from the legal area, guiding the task of lawyers not only by generic inferences based on their technical knowledge, but with the specific application of Statistical models that complement the tasks of analysis, projections and decision making.
+
+The application of Machine Learning models can be defined as a branch of Artificial Intelligence systems designed to learn without programming specific questions. This does not imply that it is enough to just define parameters and let the model run, on the contrary, we must first collect the data to feed and train our model, adapting it to the search and specific analysis of the fields that we want to enhance.
+
+
+### Data Training.
+
+#### Modeling Our Virtual Brain.
+
+
+To achieve our machine learning model, we will need to collect and select the data that we will use. Depending on the need or objectives of each organization, the required data is limited to those that come from the specific area to be analyzed.
+
+Broadly, once the data has been collected and selected, and the model trained, it can begin to generalize, that is, operate in the analysis of new data to make the expected projections on the data that will be incorporated in the future, leaving it of the system the analysis, distribution and processing of the novel data.
+
+This stage is where the models generally present their deficiencies, so an agile and iterative development guarantees an efficient way to increase the complexity of the system, minimizing costs and delivery times, allowing a clear focus on the aspects to improve. The assembly and improvement of the “decision tree”, through cross validation processes, allows us to increase the reliability of our models.
+
+
+### Lex ex machina.
+
+
+In the legal field, we know that laws are created by and for individuals, people of any nature, so we tend to deny the ability of the so-called "hard sciences" to contribute in an environment as entropic as the social field.
+
+Unfortunately, we tend to ignore the preconceptions and prejudices inherent in all people, a matter of which those who operate in the legal field do not escape. It is at this point that the contribution of machine learning technologies becomes essential, since it allows transposing preconceptions and analyzing raw data in a pure way, giving a more impartial or objective look at specific issues.
+
+Machine learning does not have to replace the decision-making process carried out by individuals, but it does bring the benefits of a “check and balance” to counter our decisions with the objective advice of an impartial data survey, not conditioned by our preconceptions.
+
+An example of the applications of machine learning models turns out to be its application to predict judgments or judicial decisions.
+
+The well-known FantasySCOTUS program, from the United States, consists of a contest where several operators of the legal field model their machine learning systems to achieve the highest percentage of prediction of results on judgments of the Supreme Court of Justice in that country.
+
+Using the method "Random Forest Classifiers", it has been possible to implement predictive models with a percentage of 70.2% certainty about the outcome of the decisions, similar to correctly predicting 7 out of 10 cases admitted (based on a historical analysis of precedents) .
+
+Slowly, the legal field is absorbing the benefits and challenges of new technologies, positioning its focus on the search for practical applications for tasks that currently require large teams to address large volumes of work (e.g. due diligence tasks, models predictive, etc.)
+
+
+### Creative Destruction.
+
+
+While the preconceptions about what is possible and what is not in the field of law are slowly thwarted, new technologies bring a paradigm shift about our way of approaching and working the law, in addition to rethinking the way we perform tasks and address problems that, so far, where only trusted to the human gaze, with the mistakes that it entails.
+
+Technology does not seek to replace them, but to help us strengthen our ability to address problems and find innovative solutions, essential elements in today's market, governed by innovation and competition at different levels.
+
+As Schumpeter observed at the time, obsolete practices will be dismantled by the destructive creation of the capitalist system itself, while this requires the permanent impulse towards new ways of generating progress and innovation, given the voracity and competence immanent to our economic models.
+
+In short, incorporating new technologies into our legal systems is no longer a matter of contributing to the development of new sciences, but it is a requirement to remain competitive in a market that, unquestionably, is mired in what some understand as a new industrial revolution.
+
+The legal field is not the exception to these changes, those who decide to be oblivious to innovation will be, as everything eventually, obsolete.
+
+*“Speaking of a new world order, the future has already arrived for us lawyers too; it's just not evenly distributed yet.”*
+** - William Gibson.**
+
+
+### Bibliography
+
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 1, artículo distribuido por LexPredict, Elevate Business, 30 de Agosto del 2018. Link:https://www.lexpredict.com/2016/09/intro-part-1-legal-analytics/.
+
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 3: MACHINE LEARNING, artículo distribuido por LexPredict, Elevate Business, 10 de Octubre del 2016. Link: https://www.lexpredict.com/2016/10/intro-legal-analytics-part-3-machine-learning/.
+ 
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 4: GROWING OUR (DECISION) TREE, artículo distribuido por LexPredict, Elevate Business, 16 de Octubre del 2016. Link:https://www.lexpredict.com/2016/10/intro-legal-analytics-part-4-decision-tree/
+ 
+Sancrainte, Rovert, INTRODUCTION TO LEGAL ANALYTICS, PART 5: DECISION-MAKING MADE EASIER, artículo distribuido por LexPredict, Elevate Business, 24 de Octubre del 2016. Link:https://www.lexpredict.com/2016/10/intro-legal-analytics-part-5-decision-making/
+
+Katz, Daniel Martin and Bommarito, Michael James and Blackman, Josh, A General Approach for Predicting the Behavior of the Supreme Court of the United States (January 16, 2017). Available at SSRN: https://ssrn.com/abstract=2463244 or http://dx.doi.org/10.2139/ssrn.2463244
+
+Michael Luca, Jon Kleinberg and Sendhil Mullainathan, “Algorithms Need Managers, Too.”, Harvard Business Review, Reprint R1601H, originally January-February 2016.
+
+Schumpeter, Joseph A., “Creative Destruction: From Capitalism, Socialism and Democracy”. Harper, New York, 1975, orig. pub. 1942.
+
+Sande, Tomas. “Schumpeter’s Creative Destruction”. Medium. Link: https://medium.com/@tomassande96/https-medium-com-schumpeters-creative-destruction-a9aad6c8a3df
